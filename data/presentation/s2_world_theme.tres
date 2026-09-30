@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="StageArtTheme" load_steps=2 format=3]
+[ext_resource type="Script" path="res://data/presentation/stage_art_theme.gd" id="1_theme"]
+[resource]
+script = ExtResource("1_theme")
+stage_id = &"s2"
+theme_id = &"world.act1.alpine_shared"
+ground_id = &"world.act1.ground"
+route_id = &"world.act1.route"
+elevated_id = &"world.act1.raised"
+blocked_id = &"world.act1.blocked"
+elevated_cells = Array[Vector2i]([Vector2i(2, 0), Vector2i(6, 2)])
+elevated_variant_ids = Array[StringName]([&"world.act1.raised", &"world.act1.raised"])
+backdrop_panorama_id = &"world.act1.panorama"
+surface_modulate = Color(1, 1, 1, 1)
+spawn_landmark_id = &"world.act1.spawn"
+spawn_cell = Vector2i(0, 1)
+spawn_pivot = Vector2i(32, 64)
+core_landmark_id = &"world.act1.core"
+core_cell = Vector2i(9, 3)
+core_pivot = Vector2i(32, 80)
+blocked_cells = Array[Vector2i]([Vector2i(3, 2), Vector2i(5, 2)])
+blocked_variant_ids = Array[StringName]([&"world.act1.blocked", &"world.act1.blocked"])
+env_prop_cells = Array[Vector2i]([])
+env_prop_ids = Array[StringName]([])

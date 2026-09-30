@@ -1,0 +1,60 @@
+extends Node
+const OUT:="/home/ubuntu/fablewood_audio_refresh/"
+func frames(n:int=8)->void:
+	for i:int in n:await get_tree().process_frame
+func _ready()->void:
+	get_window().size=Vector2i(1440,900);get_window().content_scale_size=Vector2i(1440,900)
+	await frames()
+	var Screen=load("res://scripts/fablewood/screen.gd")
+	var probe:Control=Screen.new();probe._settings_file="user://audio_defaults_absent.cfg";probe._load_preferences()
+	assert(is_equal_approx(probe._sfx_volume,0.4875))
+	var bus:=AudioServer.get_bus_index("SFX")
+	assert(is_equal_approx(db_to_linear(AudioServer.get_bus_volume_db(bus)),0.4875))
+	var cfg:=ConfigFile.new();cfg.set_value("settings","music",0.25);assert(cfg.save("user://audio_missing_key.cfg")==OK)
+	probe._settings_file="user://audio_missing_key.cfg";probe._load_preferences();assert(is_equal_approx(probe._sfx_volume,0.4875))
+	for saved:float in [0.65,0.23,0.0]:
+		cfg.set_value("settings","sfx",saved);assert(cfg.save("user://audio_saved.cfg")==OK)
+		probe._settings_file="user://audio_saved.cfg";probe._load_preferences()
+		assert(is_equal_approx(probe._sfx_volume,saved))
+		assert(AudioServer.is_bus_mute(bus)==(saved==0.0))
+	probe.free()
+	Game.open_title();await frames(15)
+	var screen:Control=Game.content
+	assert(is_equal_approx(screen._sfx_volume,0.4875))
+	assert(AudioServer.get_driver_name()!="Dummy","Real audio backend required")
+	assert(Music.play_cue(&"fablewood"));await frames(15)
+	var player=Music._active_player()
+	assert(player.playing and player.playback_type==AudioServer.PLAYBACK_TYPE_STREAM)
+	assert(player.stream is AudioStreamOggVorbis and player.stream.loop)
+	var music_cue=load("res://data/presentation/audio/cues/fablewood.tres")
+	assert(absf(player.stream.get_length()-float(music_cue.get_meta("duration_seconds")))<0.1)
+	var starts:int=Music.start_count()
+	for i:int in 25:assert(Music.play_cue(&"fablewood"))
+	assert(Music.start_count()==starts and Music.player_count()==2)
+	screen._show_settings();await frames()
+	var sliders:Array=screen.overlay.find_children("*","HSlider",true,false)
+	assert(sliders.size()==2 and is_equal_approx(sliders[1].value,0.4875))
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png(OUT+"settings_default.png")
+	# Record the actual mixer output, including several restrained semantic effects.
+	var recorder:=AudioEffectRecord.new();var master:=AudioServer.get_bus_index("Master")
+	AudioServer.add_bus_effect(master,recorder);recorder.set_recording_active(true)
+	for cue:String in ["build","fire","frost","storm","earth","enemy","upgrade"]:
+		Sfx.play(cue);await get_tree().create_timer(0.7).timeout
+	recorder.set_recording_active(false);var recording:=recorder.get_recording();assert(recording!=null)
+	assert(recording.save_to_wav(OUT+"native_mix.wav")==OK)
+	AudioServer.remove_bus_effect(master,AudioServer.get_bus_effect_count(master)-1)
+	sliders[1].value=0;await frames();assert(AudioServer.is_bus_mute(bus))
+	sliders[1].value=0.4875;await frames();assert(not AudioServer.is_bus_mute(bus))
+	assert(is_equal_approx(db_to_linear(AudioServer.get_bus_volume_db(bus)),0.4875))
+	sliders[0].value=0;await frames();assert(AudioServer.is_bus_mute(AudioServer.get_bus_index("Music")))
+	sliders[0].value=0.5;await frames();assert(not AudioServer.is_bus_mute(AudioServer.get_bus_index("Music")))
+	screen._dismiss();assert(Game.start_campaign(false));assert(Game.start_campaign_stage(&"s1"));await frames(15)
+	screen=Game.content;screen._skip_tutorial()
+	assert(is_equal_approx(screen._sfx_volume,0.4875) and Music._active_player().playing)
+	assert(Music.start_count()==starts)
+	Game.open_title();await frames(12)
+	assert(is_equal_approx(Game.content._sfx_volume,0.4875))
+	Music.stop();Sfx.stop_all()
+	print("FABLEWOOD_AUDIO_REFRESH_PASS: exact defaults and slider, missing key, saved prefs/mute, streaming loop, no repeated starts, native mixer, scene retention")
+	get_tree().quit()

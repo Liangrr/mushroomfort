@@ -1,0 +1,46 @@
+{
+  "archiveSha256": "232df1951aff9f057429a20e19c101f4cea85c7e9d7a4471c122dfb3ce790aa8",
+  "archiveSizeBytes": 2230160,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "232df1951aff9f057429a20e19c101f4cea85c7e9d7a4471c122dfb3ce790aa8",
+      "catalogPath": "sfx/weapons/sfxmint-impact-explosion/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true
+      },
+      "metadataPath": "sfx/weapons/sfxmint-impact-explosion/metadata.json",
+      "metadataSha256": "ab05646720c6a29c36fc048dc2790680e3c8cc4aa6a1e7e0b904ad884d2cc9c7",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "metadataPath": "sfx/weapons/sfxmint-impact-explosion/metadata.json",
+        "metadataSha256": "sha256:ab05646720c6a29c36fc048dc2790680e3c8cc4aa6a1e7e0b904ad884d2cc9c7",
+        "name": "Explosion Blast sound effects",
+        "packId": "sfxmint:impact-explosion",
+        "url": "https://sfxmint.com/sounds/impact-explosion"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "sfx/weapons/sfxmint-impact-explosion/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "impact-explosion-01.wav",
+      "sha256": "78fb319ce861c185203f063c70d43939ae064f4062b42d256d6f39a8b7a104b8",
+      "sizeBytes": 705678
+    }
+  ],
+  "version": 1
+}

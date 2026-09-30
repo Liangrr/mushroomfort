@@ -1,0 +1,47 @@
+{
+  "archiveSha256": "d46811ae40dea67cdae4715b04cfb0d2a162543d32c90c26588508e9b501a963",
+  "archiveSizeBytes": 89971,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "d46811ae40dea67cdae4715b04cfb0d2a162543d32c90c26588508e9b501a963",
+      "catalogPath": "2d-sprites/characters/itch-io-3641212/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "metadataPath": "2d-sprites/characters/itch-io-3641212/metadata.json",
+      "metadataSha256": "8d7241e1e16895e762dff4291cd62981b9444fbb36d0310e85dc8c89d38830c7",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "metadataPath": "2d-sprites/characters/itch-io-3641212/metadata.json",
+        "metadataSha256": "sha256:8d7241e1e16895e762dff4291cd62981b9444fbb36d0310e85dc8c89d38830c7",
+        "name": "Pixel Monsters & Enemies Asset Pack",
+        "packId": "itch-io:3641212",
+        "url": "https://elesrech.itch.io/pixel-monsters-enemies-asset-pack"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "2d-sprites/characters/itch-io-3641212/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "Pixel_Monsters&Enemies-Asset_Pack/09_goblin/09_goblin_blue_walk.png",
+      "sha256": "539bb6a1d3c1006de141a4d676cd0670ac6c76954ec67aeb8b5e562566ce280c",
+      "sizeBytes": 595
+    }
+  ],
+  "version": 1
+}

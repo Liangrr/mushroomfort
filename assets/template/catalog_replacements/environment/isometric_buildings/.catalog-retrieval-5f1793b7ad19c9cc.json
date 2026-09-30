@@ -1,0 +1,193 @@
+{
+  "archiveSha256": "0894214e3b604f3eef53b9fa633340ba4617e24053a6178fa81dab6bac3d6d5e",
+  "archiveSizeBytes": 1706949,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "0894214e3b604f3eef53b9fa633340ba4617e24053a6178fa81dab6bac3d6d5e",
+      "catalogPath": "2d-sprites/tiles/kenney-isometric-tiles-buildings/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "metadataPath": "2d-sprites/tiles/kenney-isometric-tiles-buildings/metadata.json",
+      "metadataSha256": "9251240d51dea535f2b25f82cc7cc247a5218b6cc022a1cab76f9ce46c101c1c",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "author": "Kenney",
+        "metadataPath": "2d-sprites/tiles/kenney-isometric-tiles-buildings/metadata.json",
+        "metadataSha256": "sha256:9251240d51dea535f2b25f82cc7cc247a5218b6cc022a1cab76f9ce46c101c1c",
+        "name": "Isometric Tiles Buildings",
+        "packId": "kenney-isometric-tiles-buildings",
+        "url": "https://kenney.nl/assets/isometric-tiles-buildings"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "2d-sprites/tiles/kenney-isometric-tiles-buildings/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "PNG/buildingTiles_000.png",
+      "sha256": "d6f183657fb305a7bdce8d7741299b9711492c8c7441ecc806e32b3cd31a3c63",
+      "sizeBytes": 5854
+    },
+    {
+      "member": "PNG/buildingTiles_001.png",
+      "sha256": "be773ecc5ff13eb68c34e03d09b178a7dc3259c63bed25e41db62dea117b2639",
+      "sizeBytes": 9892
+    },
+    {
+      "member": "PNG/buildingTiles_002.png",
+      "sha256": "a0fed25cdf4803f0d9148047e616366861dbf10e010059532d8370a075756ec2",
+      "sizeBytes": 10422
+    },
+    {
+      "member": "PNG/buildingTiles_003.png",
+      "sha256": "dd590479b46c8eb793bfc170b9e26d778b81135695e01e8e182b6e55281f63ad",
+      "sizeBytes": 9834
+    },
+    {
+      "member": "PNG/buildingTiles_004.png",
+      "sha256": "3240446059481500975581d1d883928939de24ecdb323b07bb724c168c5f5db1",
+      "sizeBytes": 8657
+    },
+    {
+      "member": "PNG/buildingTiles_005.png",
+      "sha256": "18fab5e04679ef87b4dae8ce75fb308a359819b3ae8b87f01480444d2f4184c2",
+      "sizeBytes": 2503
+    },
+    {
+      "member": "PNG/buildingTiles_006.png",
+      "sha256": "c88d752b78df9a5b8aaa48d11c099345b845b9d821c9ac03fbfa1990492fa281",
+      "sizeBytes": 2464
+    },
+    {
+      "member": "PNG/buildingTiles_007.png",
+      "sha256": "a9e21d0dd2ead0bd607c6d372ab51c761005611afc7055637e9683333ce1303e",
+      "sizeBytes": 5432
+    },
+    {
+      "member": "PNG/buildingTiles_008.png",
+      "sha256": "c33b38e7777ab3f6852d352c19c592b883e7de1e64b20b9cc15ab1ad3f13180b",
+      "sizeBytes": 5883
+    },
+    {
+      "member": "PNG/buildingTiles_009.png",
+      "sha256": "67adb65a429f3e25464fec4b56fd1f5333eff2955698d9073e8c82f94df1b673",
+      "sizeBytes": 10324
+    },
+    {
+      "member": "PNG/buildingTiles_010.png",
+      "sha256": "50a2aa55586d62c6373ae56b5fa95001cbd2628cdfae4e5b3eca20e0e63d5861",
+      "sizeBytes": 9802
+    },
+    {
+      "member": "PNG/buildingTiles_011.png",
+      "sha256": "9230fda45d8c4e91005710bc6d38a2664410250f8462bd6ae05024e30477400a",
+      "sizeBytes": 8004
+    },
+    {
+      "member": "PNG/buildingTiles_012.png",
+      "sha256": "18f17ed4c175c9f25b11cb20821fb1e249e98563b5d5281808836b5d586cbcdf",
+      "sizeBytes": 8795
+    },
+    {
+      "member": "PNG/buildingTiles_013.png",
+      "sha256": "5af7c511caaf1a61a516f23cb9c3c307882fd7f9afe75acfe6396f8675e56896",
+      "sizeBytes": 2480
+    },
+    {
+      "member": "PNG/buildingTiles_014.png",
+      "sha256": "7031bb43358202bf0f3fefebbf1eec530b7bbc18b6c3026e39329bc55e85f5ab",
+      "sizeBytes": 9252
+    },
+    {
+      "member": "PNG/buildingTiles_015.png",
+      "sha256": "2f6a0d0f2f6ababe8ca9f2b224a299a93e6662ab32d42638d4ac5cc66a30f184",
+      "sizeBytes": 5516
+    },
+    {
+      "member": "PNG/buildingTiles_016.png",
+      "sha256": "cadc1906a686f5851dccd37708b5216c3aa977c10e1c07bde187d6939b00635e",
+      "sizeBytes": 5772
+    },
+    {
+      "member": "PNG/buildingTiles_017.png",
+      "sha256": "aecfdfee17ea2b6ae6df0fb430e92bdeedbbd25e0baee43913c0a8e4d67061c7",
+      "sizeBytes": 9744
+    },
+    {
+      "member": "PNG/buildingTiles_018.png",
+      "sha256": "6555b9e8c6fce9784d9863978f6a8a28e68c769c006763c74a8226dc60323572",
+      "sizeBytes": 8464
+    },
+    {
+      "member": "PNG/buildingTiles_019.png",
+      "sha256": "116f62261e135f0a85ebda709e598ae7930c0ced4c20f56d124c2206e2e927b8",
+      "sizeBytes": 8003
+    },
+    {
+      "member": "PNG/buildingTiles_020.png",
+      "sha256": "37d7d6f0f83c34bc98c5224f9ee9d9c2bde724f9caf288988b3f87ac684adcab",
+      "sizeBytes": 8764
+    },
+    {
+      "member": "PNG/buildingTiles_021.png",
+      "sha256": "a32c19d3a0fe7093ef449113c951283c6ce26abea73ea0fc25dae203d62c8502",
+      "sizeBytes": 9234
+    },
+    {
+      "member": "PNG/buildingTiles_022.png",
+      "sha256": "3b93e667e8b03a32d14c7a3967249a21294a4653d2bf82c560d8642553b2ab81",
+      "sizeBytes": 9257
+    },
+    {
+      "member": "PNG/buildingTiles_023.png",
+      "sha256": "3b12d088bfbf366a4dede5a25ffd79dde0b4865522bfc8c179cd949567beece3",
+      "sizeBytes": 5499
+    },
+    {
+      "member": "PNG/buildingTiles_024.png",
+      "sha256": "dc075c775dcd02d58849c1b119e36fdc8b11cca0e4fefba26f4af0e0b097d142",
+      "sizeBytes": 5812
+    },
+    {
+      "member": "PNG/buildingTiles_025.png",
+      "sha256": "c7267a6d69ca61dc318229a9c220d829dfcad484da838b70aba0109011b70e55",
+      "sizeBytes": 7302
+    },
+    {
+      "member": "PNG/buildingTiles_026.png",
+      "sha256": "bfd7e0d4135bfac6fdbe77be7aa25616b7d4cbc9fd51e6cd1a45b887c0362e84",
+      "sizeBytes": 8652
+    },
+    {
+      "member": "PNG/buildingTiles_027.png",
+      "sha256": "5c416793b56d14665d99432797f5d6173dadfe416a5af7f6ae7eec6fde72a999",
+      "sizeBytes": 8017
+    },
+    {
+      "member": "PNG/buildingTiles_028.png",
+      "sha256": "7477adf9edc2e61cf36dd22b049f71ae4eb2fb84039fe5fbeda26b813a25375e",
+      "sizeBytes": 8495
+    },
+    {
+      "member": "PNG/buildingTiles_029.png",
+      "sha256": "acf4edd8f0ced644c862cf80dc9e41053caf72ddde5658d8c08fdd6999470aba",
+      "sizeBytes": 9229
+    }
+  ],
+  "version": 1
+}

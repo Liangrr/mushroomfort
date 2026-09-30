@@ -1,0 +1,103 @@
+{
+  "archiveSha256": "46f30f2411dafa011f8e52e32d80be197f8ccfe1164818e664358ae6c78a38b9",
+  "archiveSizeBytes": 1203276,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "46f30f2411dafa011f8e52e32d80be197f8ccfe1164818e664358ae6c78a38b9",
+      "catalogPath": "2d-sprites/environment/kenney-retro-textures-fantasy/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "metadataPath": "2d-sprites/environment/kenney-retro-textures-fantasy/metadata.json",
+      "metadataSha256": "3d72da0ff9f1088fe00e1e80941be7ff655c8e0ebca551520980a301d0a861c1",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "author": "Kenney",
+        "metadataPath": "2d-sprites/environment/kenney-retro-textures-fantasy/metadata.json",
+        "metadataSha256": "sha256:3d72da0ff9f1088fe00e1e80941be7ff655c8e0ebca551520980a301d0a861c1",
+        "name": "Retro Textures Fantasy",
+        "packId": "kenney-retro-textures-fantasy",
+        "url": "https://kenney.nl/assets/retro-textures-fantasy"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "2d-sprites/environment/kenney-retro-textures-fantasy/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "PNG/door_metal_gate.png",
+      "sha256": "105aa04da860feb8d7e87565fd2207e4d7d8d0a46d73d463289795db7e2312d4",
+      "sizeBytes": 7259
+    },
+    {
+      "member": "PNG/door_wood_window_lit.png",
+      "sha256": "77e8ff30e17d51fb81f7d09cd38009cde0f8647e3d73f01bb87d86633e1cff92",
+      "sizeBytes": 8157
+    },
+    {
+      "member": "PNG/floor_ground_dirt.png",
+      "sha256": "76e138b4a850dead179b70522c34957439439d0d06bbc2dd1aae1f40b0e30795",
+      "sizeBytes": 4520
+    },
+    {
+      "member": "PNG/floor_ground_grass.png",
+      "sha256": "03459af8c70868339f59c2c105266f3c7c52295bde693003fb4dc7f6e278a8c0",
+      "sizeBytes": 4176
+    },
+    {
+      "member": "PNG/floor_ground_sand.png",
+      "sha256": "af3210a7ab816a32242a5f9f4cd3e5df358dbdee18cec31e8bee8049a2ce4013",
+      "sizeBytes": 4755
+    },
+    {
+      "member": "PNG/floor_ground_water.png",
+      "sha256": "b8d13dc87f6dc196865fa5862e4e3881c8ac1e7a070608e22fe555fa04beb10f",
+      "sizeBytes": 4993
+    },
+    {
+      "member": "PNG/floor_ground_water_green.png",
+      "sha256": "8e6783c2b6118cdf983673712b3fb20370b1cce23f7dd9e260efffccc9f98a4b",
+      "sizeBytes": 4957
+    },
+    {
+      "member": "PNG/floor_stone.png",
+      "sha256": "3394e5f670041abef5245228c59cc507c2ca1d56d27c1b6f368b543d00113209",
+      "sizeBytes": 4153
+    },
+    {
+      "member": "PNG/floor_stone_pattern.png",
+      "sha256": "4990dd8c19b69366977485629bb84b895562ca9c18c323d86a966b51265e0e7b",
+      "sizeBytes": 4150
+    },
+    {
+      "member": "PNG/floor_tiles_blue_large.png",
+      "sha256": "aa0f9866666cac62d5261f3f5282cefaa50a1775d893b83b1435dbc347634e10",
+      "sizeBytes": 4270
+    },
+    {
+      "member": "PNG/floor_tiles_sand_large.png",
+      "sha256": "223d3cda5a2993866e0f1149d8508ac2cf7564b101227b516ab9245facf52aa1",
+      "sizeBytes": 4056
+    },
+    {
+      "member": "PNG/floor_wood_planks.png",
+      "sha256": "56a7ea5713833dcde33e9ac11b3fc524cee7e8d9a195e2f8a42f94c59ac06185",
+      "sizeBytes": 4430
+    }
+  ],
+  "version": 1
+}

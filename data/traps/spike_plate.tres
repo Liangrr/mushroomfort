@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TrapDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/trap_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"spike_plate"
+display_name = "Spike Plate"
+dp_cost = 4
+trigger = 0
+effect = 0
+damage = 20
+slow_permille = 0
+charges = 3
+sprite_id = &"spike_plate"

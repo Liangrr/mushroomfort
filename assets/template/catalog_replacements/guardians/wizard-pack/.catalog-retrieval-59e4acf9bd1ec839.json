@@ -1,0 +1,47 @@
+{
+  "archiveSha256": "41167557a3401e7156b6557cfec932457d333059c6f6393bf958b6b4fe3a2291",
+  "archiveSizeBytes": 69998,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "41167557a3401e7156b6557cfec932457d333059c6f6393bf958b6b4fe3a2291",
+      "catalogPath": "2d-sprites/props/itch-io-550519/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "metadataPath": "2d-sprites/props/itch-io-550519/metadata.json",
+      "metadataSha256": "e8337cee0e090959faa9f28b32f6bb2795a30aafb39f486ad6c2e4fd38dde644",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "metadataPath": "2d-sprites/props/itch-io-550519/metadata.json",
+        "metadataSha256": "sha256:e8337cee0e090959faa9f28b32f6bb2795a30aafb39f486ad6c2e4fd38dde644",
+        "name": "Wizard Pack",
+        "packId": "itch-io:550519",
+        "url": "https://luizmelo.itch.io/wizard-pack"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "2d-sprites/props/itch-io-550519/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "Wizard Pack/Attack1.png",
+      "sha256": "b4d48f10007483489fcda1b474c14be99f415caae3b6b6eedaf85277f89ed501",
+      "sizeBytes": 15367
+    }
+  ],
+  "version": 1
+}

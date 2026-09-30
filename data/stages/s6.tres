@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="StageDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/stage_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"s6"
+title = "Turncoat"
+music_profile_id = &"lunaris"
+music_variant_id = &"gravity_lattice"
+grid_rows = PackedStringArray("............", "SGGGG.......", "...EGX.E....", "....GGGGGGGB", "...EGX......", "SGGGG.......")
+paths = Array[PackedVector2Array]([PackedVector2Array(0, 1, 1, 1, 2, 1, 3, 1, 4, 1, 4, 2, 4, 3, 5, 3, 6, 3, 7, 3, 8, 3, 9, 3, 10, 3, 11, 3), PackedVector2Array(0, 5, 1, 5, 2, 5, 3, 5, 4, 5, 4, 4, 4, 3, 5, 3, 6, 3, 7, 3, 8, 3, 9, 3, 10, 3, 11, 3)])
+waves = Array[Dictionary]([{
+"enemy_id": &"grunt",
+"path_idx": 1,
+"tick": 60
+}, {
+"enemy_id": &"grunt",
+"path_idx": 1,
+"tick": 150
+}, {
+"enemy_id": &"heavy",
+"path_idx": 0,
+"tick": 240
+}, {
+"enemy_id": &"grunt",
+"path_idx": 0,
+"tick": 300
+}, {
+"enemy_id": &"grunt",
+"path_idx": 0,
+"tick": 330
+}, {
+"enemy_id": &"runner",
+"path_idx": 0,
+"tick": 360
+}, {
+"enemy_id": &"grunt",
+"path_idx": 1,
+"tick": 450
+}, {
+"enemy_id": &"grunt",
+"path_idx": 1,
+"tick": 540
+}, {
+"enemy_id": &"grunt",
+"path_idx": 0,
+"tick": 690
+}, {
+"enemy_id": &"heavy",
+"path_idx": 1,
+"tick": 720
+}, {
+"enemy_id": &"runner",
+"path_idx": 1,
+"tick": 780
+}, {
+"enemy_id": &"runner",
+"path_idx": 1,
+"tick": 810
+}, {
+"enemy_id": &"grunt",
+"path_idx": 1,
+"tick": 840
+}, {
+"enemy_id": &"grunt",
+"path_idx": 1,
+"tick": 900
+}, {
+"enemy_id": &"grunt",
+"path_idx": 0,
+"tick": 930
+}, {
+"enemy_id": &"grunt",
+"path_idx": 0,
+"tick": 1020
+}])
+wave_starts = PackedInt32Array(0, 650)
+leak_limit = 3
+squad_size = 6
+recovery_roster = Array[StringName]([&"caster_1", &"guard_1", &"sniper_1"])
+rewards = Array[Dictionary]([])
+campaign_index = 6
+requires = Array[StringName]([])

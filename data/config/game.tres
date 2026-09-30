@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="GameConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/game_config.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+base_hp_start = 10
+ticks_per_second = 30
+dp_start = 10
+dp_regen_interval_ticks = 30
+dp_cap = 99
+retreat_refund_percent = 50
+sp_progress_interval_ticks = 30
+damage_stagger_ticks = 8

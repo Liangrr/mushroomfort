@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="SfxCatalog" format=3]
+[ext_resource type="Script" path="res://bundled/sfx/sfx_catalog.gd" id="1"]
+[resource]
+script = ExtResource("1")
+entries = {
+	&"enemy_shell_break": {"path": "res://assets/template/Audio/illuminated_enemy_shell_break.ogg"},
+	&"enemy_harrier_dash": {"path": "res://assets/template/Audio/illuminated_enemy_harrier_dash.ogg"},
+	&"enemy_brood_spawn": {"path": "res://assets/template/Audio/illuminated_enemy_brood_spawn.ogg"},
+	&"meteor_impact": {"path": "res://assets/template/Audio/illuminated_meteor_impact.ogg"},
+&"merge_success": {"path": "res://assets/template/Audio/illuminated_merge_success.ogg"},
+&"hover": {"path": "res://assets/template/Audio/illuminated_hover.ogg"},
+&"confirm": {"path": "res://assets/template/Audio/illuminated_confirm.ogg"},
+&"back": {"path": "res://assets/template/Audio/illuminated_back.ogg"},
+&"invalid": {"path": "res://assets/template/Audio/illuminated_invalid.ogg"},
+&"build": {"path": "res://assets/template/Audio/illuminated_build.ogg"},
+&"upgrade": {"path": "res://assets/template/Audio/illuminated_upgrade.ogg"},
+&"fire": {"path": "res://assets/template/Audio/illuminated_fire.ogg"},
+&"fire_hit": {"path": "res://assets/template/Audio/illuminated_fire_hit.ogg"},
+&"frost": {"path": "res://assets/template/Audio/illuminated_frost.ogg"},
+&"frost_hit": {"path": "res://assets/template/Audio/illuminated_frost_hit.ogg"},
+&"storm": {"path": "res://assets/template/Audio/illuminated_storm.ogg"},
+&"storm_hit": {"path": "res://assets/template/Audio/illuminated_storm_hit.ogg"},
+&"earth": {"path": "res://assets/template/Audio/illuminated_earth.ogg"},
+&"earth_hit": {"path": "res://assets/template/Audio/illuminated_earth_hit.ogg"},
+&"enemy": {"path": "res://assets/template/Audio/illuminated_enemy.ogg"},
+&"breach": {"path": "res://assets/template/Audio/illuminated_breach.ogg"},
+&"wave": {"path": "res://assets/template/Audio/illuminated_wave.ogg"},
+&"victory": {"path": "res://assets/template/Audio/illuminated_victory.ogg"},
+&"defeat": {"path": "res://assets/template/Audio/illuminated_defeat.ogg"}
+}
+aliases = {
+&"click": &"confirm",
+&"ui_hover": &"hover",
+&"ui_click": &"confirm",
+&"ui_confirm": &"confirm",
+&"ui_back": &"back",
+&"menu_open": &"confirm",
+&"menu_close": &"back",
+&"operator_select": &"confirm",
+&"ability_ready": &"upgrade",
+&"action_reject": &"invalid",
+&"placement_ready": &"build",
+&"base_breach": &"breach",
+&"deploy_ground": &"build",
+&"deploy_elevated": &"build",
+&"trap_trigger": &"earth",
+&"deploy": &"build",
+&"kill": &"enemy",
+&"leak": &"breach",
+&"ui_select": &"confirm",
+&"ui_accept": &"confirm",
+&"menu_transition": &"back"
+}

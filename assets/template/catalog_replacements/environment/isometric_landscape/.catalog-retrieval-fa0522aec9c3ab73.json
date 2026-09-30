@@ -1,0 +1,243 @@
+{
+  "archiveSha256": "18fa4fb22fa18bd4230e2422bc4123c986123c53966846b5a5bc219b331e7d3e",
+  "archiveSizeBytes": 1141541,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "18fa4fb22fa18bd4230e2422bc4123c986123c53966846b5a5bc219b331e7d3e",
+      "catalogPath": "2d-sprites/tiles/kenney-isometric-tiles-landscape/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "metadataPath": "2d-sprites/tiles/kenney-isometric-tiles-landscape/metadata.json",
+      "metadataSha256": "be0ed758916960ce49a94c88eddd029bad409b8c2a567a34f74fb8ebe2443d73",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "author": "Kenney",
+        "metadataPath": "2d-sprites/tiles/kenney-isometric-tiles-landscape/metadata.json",
+        "metadataSha256": "sha256:be0ed758916960ce49a94c88eddd029bad409b8c2a567a34f74fb8ebe2443d73",
+        "name": "Isometric Tiles Landscape",
+        "packId": "kenney-isometric-tiles-landscape",
+        "url": "https://kenney.nl/assets/isometric-tiles-landscape"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "2d-sprites/tiles/kenney-isometric-tiles-landscape/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "PNG/landscapeTiles_000.png",
+      "sha256": "3b7374147c9c168a6bfba17140e55b75b7366f105880499da7dbaf785a176f71",
+      "sizeBytes": 4683
+    },
+    {
+      "member": "PNG/landscapeTiles_001.png",
+      "sha256": "9a1eb511a965fea52343f5c8fbd5692ae8527f051a2a0f0e8e4159ba93877b5c",
+      "sizeBytes": 4814
+    },
+    {
+      "member": "PNG/landscapeTiles_002.png",
+      "sha256": "7ff14dc559da93767d416f45dea6fdc20cb3801f47193b60882aa6071f5149e7",
+      "sizeBytes": 4782
+    },
+    {
+      "member": "PNG/landscapeTiles_003.png",
+      "sha256": "66b92041c1db539994edf1c97bc290918f5043156ed16703e7d0039c49fad54e",
+      "sizeBytes": 6467
+    },
+    {
+      "member": "PNG/landscapeTiles_004.png",
+      "sha256": "87e508e2cc42bff51b34669603a07f3c87fa07b9314fda477ff568f37186323a",
+      "sizeBytes": 5251
+    },
+    {
+      "member": "PNG/landscapeTiles_005.png",
+      "sha256": "a60ef74ed33d2f647349cbacd995e631b89302252d9cce5b3bf552dda6c49619",
+      "sizeBytes": 6996
+    },
+    {
+      "member": "PNG/landscapeTiles_006.png",
+      "sha256": "d04a503bd0c51494f68a096dd930bac5f55671985e7bd43faceeba913b6dea65",
+      "sizeBytes": 7325
+    },
+    {
+      "member": "PNG/landscapeTiles_007.png",
+      "sha256": "8286c5d9acc30318164610be9100cd2afcdcda56cb9dcd7cc5f73fde90d1ab5c",
+      "sizeBytes": 6464
+    },
+    {
+      "member": "PNG/landscapeTiles_008.png",
+      "sha256": "45d69ab6b925a95f14ff5fdead034a4674806e22de7baec57030941c2af55203",
+      "sizeBytes": 6935
+    },
+    {
+      "member": "PNG/landscapeTiles_009.png",
+      "sha256": "9e52fd45d642322b9debfdd91c349416de7b2d34c7d9efe6afb1533c50179bbf",
+      "sizeBytes": 3503
+    },
+    {
+      "member": "PNG/landscapeTiles_010.png",
+      "sha256": "84138b5865531471c626224939dd0133c0758a7713e97d59e94b187e7831aa70",
+      "sizeBytes": 1962
+    },
+    {
+      "member": "PNG/landscapeTiles_011.png",
+      "sha256": "74483d9c1a0491d490eb230b9a6d50e3a78ffbfe76d25cd06056165f2868af26",
+      "sizeBytes": 7657
+    },
+    {
+      "member": "PNG/landscapeTiles_012.png",
+      "sha256": "8721bf34f58b7bd0494c16fffb6bafa7cf337537244d7cd7d4b6a3333a9abf8b",
+      "sizeBytes": 9366
+    },
+    {
+      "member": "PNG/landscapeTiles_013.png",
+      "sha256": "028d26f3403cb07cd8973f27ae74867236daf652b169c9781b4dd9f217796994",
+      "sizeBytes": 3531
+    },
+    {
+      "member": "PNG/landscapeTiles_014.png",
+      "sha256": "8cc9c3b9b37b2297ca75ab8e031ec17803d2f73e2a2114416211157242f5e0be",
+      "sizeBytes": 1072
+    },
+    {
+      "member": "PNG/landscapeTiles_015.png",
+      "sha256": "e1054a47d935580e6fdc62acb293794b3cf65c9a706d10386d6a018bc8a033f8",
+      "sizeBytes": 1881
+    },
+    {
+      "member": "PNG/landscapeTiles_016.png",
+      "sha256": "520741663d38bd9f0b3012022041e085b6613563ed14dfcca9cba4ba7b66c403",
+      "sizeBytes": 1882
+    },
+    {
+      "member": "PNG/landscapeTiles_017.png",
+      "sha256": "e7fecbcc5bb7461f63f0433ebb3d23bd550a4d3626295cef5820021988285091",
+      "sizeBytes": 9009
+    },
+    {
+      "member": "PNG/landscapeTiles_018.png",
+      "sha256": "a9eb21d4e2dcda44bba64fd1a12d3fbce33ed1b41fe82bdf0d4897abff95d6f0",
+      "sizeBytes": 4679
+    },
+    {
+      "member": "PNG/landscapeTiles_019.png",
+      "sha256": "27b7a52598e8e19a7de73100e06f1a595bb332cf39b4eca5c018df2bbaf0a9de",
+      "sizeBytes": 4602
+    },
+    {
+      "member": "PNG/landscapeTiles_020.png",
+      "sha256": "065df274787be55b428366ec0194e876a361ec76d9602fb2652fba07d3d80b23",
+      "sizeBytes": 939
+    },
+    {
+      "member": "PNG/landscapeTiles_021.png",
+      "sha256": "96a549b17d4aa500bcd8a5400cab073bec42d149245c4f9cfd39c7a2ad5bf740",
+      "sizeBytes": 1725
+    },
+    {
+      "member": "PNG/landscapeTiles_022.png",
+      "sha256": "44059609b941a52b471a32a82b57d01ecbdbd3f9576874b9ac88772dde83677c",
+      "sizeBytes": 2191
+    },
+    {
+      "member": "PNG/landscapeTiles_023.png",
+      "sha256": "f6034c364dbe2ee6b2c11794fe86db5b01095763cebc2143fc6346a905ae207f",
+      "sizeBytes": 5150
+    },
+    {
+      "member": "PNG/landscapeTiles_024.png",
+      "sha256": "c05d5d5a08fd9a910d2372038c24a86a33f2299f24b24949eda1f699173fc011",
+      "sizeBytes": 4763
+    },
+    {
+      "member": "PNG/landscapeTiles_025.png",
+      "sha256": "e414dfdff4283cc1199d572eb6345a467fd8bdbba2f3ae78855c7fb7b0fcc4c7",
+      "sizeBytes": 4821
+    },
+    {
+      "member": "PNG/landscapeTiles_026.png",
+      "sha256": "1add71a0be7512c2d0ff5e6fddcb59901d5fc437b717b4401f1194541d97c12d",
+      "sizeBytes": 5554
+    },
+    {
+      "member": "PNG/landscapeTiles_027.png",
+      "sha256": "c0d1d74d4fc0e5b82899e022f5d16db374613f5ccdf33d72ae13e327dc1b86aa",
+      "sizeBytes": 3157
+    },
+    {
+      "member": "PNG/landscapeTiles_028.png",
+      "sha256": "618ab73eb6ecb77f458bdd703046dff3b1059bfd90d30ea302e0b33223d3a62c",
+      "sizeBytes": 2169
+    },
+    {
+      "member": "PNG/landscapeTiles_029.png",
+      "sha256": "c86d76c6749be9059e54eec8136fa78f02db78542ac4e30b479482527c0b9a21",
+      "sizeBytes": 2165
+    },
+    {
+      "member": "PNG/landscapeTiles_030.png",
+      "sha256": "92edc723b2509e0dbf05a02dff285d36f81cdd780f431821dc203ee0007dd784",
+      "sizeBytes": 5586
+    },
+    {
+      "member": "PNG/landscapeTiles_031.png",
+      "sha256": "a6914a4ca1cc1888a7b721cd29b7852dc3327e49b4d3f79e5dfcc0f48140fc75",
+      "sizeBytes": 5288
+    },
+    {
+      "member": "PNG/landscapeTiles_032.png",
+      "sha256": "ea74a81d8cc18f2cef85958d3c286138b91ffba9c6ac1be05eb8305d59311c16",
+      "sizeBytes": 6098
+    },
+    {
+      "member": "PNG/landscapeTiles_033.png",
+      "sha256": "b5b87bfbd32fec620274abfe3bf07b386f7fdbb75e4f2ab11f0c021e863bd92b",
+      "sizeBytes": 5439
+    },
+    {
+      "member": "PNG/landscapeTiles_034.png",
+      "sha256": "58a8f9c270bc0ac1a11313b1f589d351dd6855834363a2ea5aab21858520f479",
+      "sizeBytes": 3134
+    },
+    {
+      "member": "PNG/landscapeTiles_035.png",
+      "sha256": "a1d6c5694654611cbb1ffe8e5d63e34b924a107d67518e7e5b1c23f02f80eb3e",
+      "sizeBytes": 1676
+    },
+    {
+      "member": "PNG/landscapeTiles_036.png",
+      "sha256": "0e8804269007d0e1920d39168d683fae32fc44737ccfd18ecbfce0393aea2c7b",
+      "sizeBytes": 1795
+    },
+    {
+      "member": "PNG/landscapeTiles_037.png",
+      "sha256": "798c48a56d8952faf4cf4d556a93f09fd7a03a53650bbed0b247c2fb57ef2de3",
+      "sizeBytes": 1132
+    },
+    {
+      "member": "PNG/landscapeTiles_038.png",
+      "sha256": "25e26c7d6a2c2ec21b57d2f419022614386110ef22ebcd4ce8fc6824c5c7cdc9",
+      "sizeBytes": 5487
+    },
+    {
+      "member": "PNG/landscapeTiles_039.png",
+      "sha256": "04daee4a1b16554197ad7ffaccd8ffbf9503d8c5f00e9a17868089e2a53eaa44",
+      "sizeBytes": 6196
+    }
+  ],
+  "version": 1
+}

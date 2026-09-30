@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "title": "Fablewood: Keepers of the Last Seed",
+  "description": "Defend the last seed with elemental guardians, combine their powers, and face escalating waves of forest invaders.",
+  "defaultCaptions": {
+    "x": "Defend the last seed in Fablewood: Keepers of the Last Seed.",
+    "facebook": "Build an elemental defense and protect the last seed in Fablewood.",
+    "reddit": "Fablewood: Keepers of the Last Seed — elemental tower defense with guardian merges.",
+    "discord": "Play Fablewood: Keepers of the Last Seed — build, upgrade, and merge elemental guardians."
+  },
+  "assets": {
+    "og": "assets/template/share/grove-20260924/og.png",
+    "favicon": "assets/template/share/grove-20260924/favicon.png"
+  }
+}

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ClassDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/class_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+class_id = &"mage_apprentice"
+stage = 1
+operator_def_id = &"caster_1"
+promotion_from_class_id = &"recruit"
+promotion_xp_required = 400
+name_key = &"data.class.mage_apprentice.name"
+role_key = &"data.class.mage_apprentice.role"
+description_key = &"data.class.mage_apprentice.description"
+name = "Mage Apprentice"
+role = "Arcane Attacker"
+description = "Deals focused magical damage from elevated ground."
+rules_version = 2

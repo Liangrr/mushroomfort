@@ -1,0 +1,153 @@
+{
+  "archiveSha256": "357071bc497e6069563f1b44779bbf5c873d5ef0daade9ba38ef0612cc6f44b4",
+  "archiveSizeBytes": 100645,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "357071bc497e6069563f1b44779bbf5c873d5ef0daade9ba38ef0612cc6f44b4",
+      "catalogPath": "2d-sprites/tiles/kenney-cursor-pixel-pack/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "metadataPath": "2d-sprites/tiles/kenney-cursor-pixel-pack/metadata.json",
+      "metadataSha256": "d39a20d47affe9b09828e596fced1dfd20eaea50432ee7e218d244b631f17ca9",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "author": "Kenney",
+        "metadataPath": "2d-sprites/tiles/kenney-cursor-pixel-pack/metadata.json",
+        "metadataSha256": "sha256:d39a20d47affe9b09828e596fced1dfd20eaea50432ee7e218d244b631f17ca9",
+        "name": "Cursor Pixel Pack",
+        "packId": "kenney-cursor-pixel-pack",
+        "url": "https://kenney.nl/assets/cursor-pixel-pack"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "2d-sprites/tiles/kenney-cursor-pixel-pack/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "Tilemap/tilemap.png",
+      "sha256": "8dc4942f446de5a774ccf960f6105d9b95b45563c490c5403aaf548b4bfcc660",
+      "sizeBytes": 5031
+    },
+    {
+      "member": "Tilemap/tilemap_packed.png",
+      "sha256": "cd4eab65437a80220a90e23123565735f435b815bfb17850d9a023cd71cdcbe5",
+      "sizeBytes": 4481
+    },
+    {
+      "member": "Tiles/tile_0000.png",
+      "sha256": "07e63ed94a1cae49ec9aac7bf90527770b72d0c2dfd57e251f052d9e664f548f",
+      "sizeBytes": 171
+    },
+    {
+      "member": "Tiles/tile_0001.png",
+      "sha256": "45e85303386627cc80083ff2707ceeea305916c25217b02ee04bd051a2aaf678",
+      "sizeBytes": 158
+    },
+    {
+      "member": "Tiles/tile_0002.png",
+      "sha256": "585c48000a8a7de6364f261727bea1479efcfc13956608da95ea357247cd98ea",
+      "sizeBytes": 172
+    },
+    {
+      "member": "Tiles/tile_0003.png",
+      "sha256": "c6468b899ee2907d9ea33070d8d0e25f27caaad2291ee56b6592ab3e87f34e01",
+      "sizeBytes": 170
+    },
+    {
+      "member": "Tiles/tile_0004.png",
+      "sha256": "5327ee61b32809dd82ecb314eaeb2534a817083aae113294c1d942c0da7a27b4",
+      "sizeBytes": 163
+    },
+    {
+      "member": "Tiles/tile_0005.png",
+      "sha256": "b43791b09355cda9da5959a7c2c426f46187ef9a0fa080ed96542d69127c8ac9",
+      "sizeBytes": 173
+    },
+    {
+      "member": "Tiles/tile_0006.png",
+      "sha256": "317d45dc26c19b47d79eeef0155fc87c8c5c8ec431660c3ae95eb83ccdc4aa60",
+      "sizeBytes": 171
+    },
+    {
+      "member": "Tiles/tile_0007.png",
+      "sha256": "710ce24de23abfe71a0f99faf7be4548f2b2b39292b585b831929251dc3abc80",
+      "sizeBytes": 176
+    },
+    {
+      "member": "Tiles/tile_0008.png",
+      "sha256": "14fbe47fbea76b7e151e9986bd67a50fc0ba9ff836673916528af0a21b45f0a9",
+      "sizeBytes": 174
+    },
+    {
+      "member": "Tiles/tile_0009.png",
+      "sha256": "60d4819452b1d9fad9f2cfd8176c93b512ffec1d86beac2febde7255772f6860",
+      "sizeBytes": 174
+    },
+    {
+      "member": "Tiles/tile_0010.png",
+      "sha256": "5237ae8c65a63b3db16f36f1e465b6bb71d3f605f5971331466327ef955da72d",
+      "sizeBytes": 169
+    },
+    {
+      "member": "Tiles/tile_0011.png",
+      "sha256": "4fd4f35621d34248c38049ecf3fdd7feaee563324f350ffe848d5832c7077d04",
+      "sizeBytes": 166
+    },
+    {
+      "member": "Tiles/tile_0012.png",
+      "sha256": "997bb27f73965a0e79156f7f746d389a85c18df5e47c1bd230c0b14deb8470c3",
+      "sizeBytes": 170
+    },
+    {
+      "member": "Tiles/tile_0013.png",
+      "sha256": "bdddf6fd4046ad3ad5e12a389cf3a46679ba7e48cba7b4c096282ad28383bde8",
+      "sizeBytes": 182
+    },
+    {
+      "member": "Tiles/tile_0014.png",
+      "sha256": "3e48fcdef9bf669abeccf772c9e05dde4f69a06edef5a8c96a530bfd11900464",
+      "sizeBytes": 190
+    },
+    {
+      "member": "Tiles/tile_0015.png",
+      "sha256": "49840f3c04589288f537f5d06b560226d693e8c898af8e919581a87814ccce9d",
+      "sizeBytes": 179
+    },
+    {
+      "member": "Tiles/tile_0016.png",
+      "sha256": "f86916e4f9bd2e127875329fe8f5432dace321f7f6c9bd449102b6a461dff8e4",
+      "sizeBytes": 172
+    },
+    {
+      "member": "Tiles/tile_0017.png",
+      "sha256": "6707a9881c4a850f5bf1990b68b6083372cf8573f20b9acbaaa358b67a3f23d9",
+      "sizeBytes": 158
+    },
+    {
+      "member": "Tiles/tile_0018.png",
+      "sha256": "0af4b17282bf0f4b04ee6d6c690fa391df8ecc1cf5ca2c9e49abc7a67063f7e5",
+      "sizeBytes": 157
+    },
+    {
+      "member": "Tiles/tile_0019.png",
+      "sha256": "5ed605d84a8f73c9d26fd0be60076f8ce5eff13442f8a40903cefdd8943dc571",
+      "sizeBytes": 172
+    }
+  ],
+  "version": 1
+}

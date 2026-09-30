@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyDef" load_steps=2 format=3]
+[ext_resource type="Script" path="res://data/enemy_def.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"orc"
+hp = 200
+speed_tiles_per_s = 0.63
+defense = 12
+leak_damage = 2
+aerial = false
+block_weight = 1
+sprite_id = &"orc"

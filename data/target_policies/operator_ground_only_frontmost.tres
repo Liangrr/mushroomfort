@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TargetPolicyDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/target_policy_def.gd" id="1_policy"]
+
+[resource]
+script = ExtResource("1_policy")
+id = &"operator_ground_only_frontmost"
+owner_kind = 0
+candidate_domain = 2
+aerial_rule = 1
+primary_rank = 1
+stable_entity_id_tie_break = true

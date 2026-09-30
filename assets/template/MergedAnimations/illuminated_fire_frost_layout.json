@@ -1,0 +1,39 @@
+{
+  "schema": "fablewood.illuminated-merged-animation-adapter.v1",
+  "key": "fire_frost",
+  "display_name": "rimeflame",
+  "static": {
+    "candidate": "res://assets/template/MergedGuardians/illuminated_fire_frost.webp",
+    "canvas": [384, 480],
+    "anchor": [193.58, 414.94],
+    "reference_height": 480.0,
+    "displayed_visible_height": 260
+  },
+  "common": {
+    "cell": [384, 480],
+    "columns": 8,
+    "rows": 6,
+    "capacity": 48,
+    "frame_count": 48,
+    "fps": 12,
+    "duration_seconds": 4.0,
+    "anchor": [193.58, 414.94],
+    "direction": "existing-fixed",
+    "loop": true,
+    "contact_relative_margins": {
+      "left": 193.58,
+      "right": 190.42,
+      "top": 154.94,
+      "bottom": 65.06
+    }
+  },
+  "idle": {
+    "candidate": "res://assets/template/MergedAnimations/illuminated_fire_frost_idle.webp",
+    "frame_map": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+  },
+  "cast": {
+    "candidate": "res://assets/template/MergedAnimations/illuminated_fire_frost_cast.webp",
+    "frame_map": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+  },
+  "integration_note": "Do not use legacy fire_frost_hd trim, capacity, pages, or frame maps. Parent adapter must use this standalone exact layout so both clips remain on the shared 384x480 contact-relative canvas. The simulation contract remains 48 frames at 12 FPS (4.0 s) for idle and cast."
+}

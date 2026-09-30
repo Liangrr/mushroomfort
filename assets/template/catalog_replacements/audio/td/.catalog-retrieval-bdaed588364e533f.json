@@ -1,0 +1,101 @@
+{
+  "archiveSha256": "f19f794f81cb2608c617cc410a12b3ad9da687c81d0778bf1ace51a9922b628d",
+  "archiveSizeBytes": 21083167,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "f19f794f81cb2608c617cc410a12b3ad9da687c81d0778bf1ace51a9922b628d",
+      "catalogPath": "sfx/cross-category/manus-template-game-td-sfx/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true
+      },
+      "metadataPath": "sfx/cross-category/manus-template-game-td-sfx/metadata.json",
+      "metadataSha256": "2f4689d6f1cb7d0bafa3f85d27f473dc39e2980da3c50c6824dd000550b5f9e6",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "author": "Manus / user-owned template assets",
+        "metadataPath": "sfx/cross-category/manus-template-game-td-sfx/metadata.json",
+        "metadataSha256": "sha256:2f4689d6f1cb7d0bafa3f85d27f473dc39e2980da3c50c6824dd000550b5f9e6",
+        "name": "Manus game-td Template Audio and SFX",
+        "packId": "manus-template-game-td-sfx"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "sfx/cross-category/manus-template-game-td-sfx/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/combat/base_breach.wav",
+      "sha256": "80025d8f3d4c58f7a6daa78b4181072bca0f66f6c56878ffd0bb21f549b1eff5",
+      "sizeBytes": 107598
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/combat/defeat.wav",
+      "sha256": "18456d12e8aec61d62718f08f2d6df973184136af25aaa749720f86d62fea414",
+      "sizeBytes": 211278
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/combat/deploy_elevated.wav",
+      "sha256": "7fa7b40e921e1dad9a925391afbd15396442f4498ba6bd26def3bd932bcb5269",
+      "sizeBytes": 232286
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/combat/deploy_ground.wav",
+      "sha256": "6bc71f63ac4a593154a7e4857f1abab7cd61798481d6450eecd085f564b05507",
+      "sizeBytes": 165398
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/combat/trap_trigger.wav",
+      "sha256": "95771bf05ca104b9c47f9259137bfd71cd82636d08f82cfc4728d592f9f3c1da",
+      "sizeBytes": 57678
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/combat/victory.wav",
+      "sha256": "67335e92de16c1f5bba05d74ae87243222fefb19cbb7bf19e6685c46aa84b252",
+      "sizeBytes": 249678
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/ui/ability_ready.wav",
+      "sha256": "9852b53f740b8ef485b3d9e0e9c5e0557693f258b8fe5cbd9a6dc1c6e7ff4ecd",
+      "sizeBytes": 42318
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/ui/action_reject.wav",
+      "sha256": "7ee6c1b16a1144ff3b345b30e775abbc90d8612f2a5242eadfca9ea8a73482ea",
+      "sizeBytes": 30798
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/ui/placement_ready.wav",
+      "sha256": "1d3f310350931e32eda6db649340fb1fe28396c20dd4d492ac8b401f0e4b757c",
+      "sizeBytes": 34638
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/ui/ui_back.wav",
+      "sha256": "1896104d54bf9db323d40feacae089519ebb1c3d6ce573b7cbb5f04ce219a2fa",
+      "sizeBytes": 558414
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/ui/ui_confirm.wav",
+      "sha256": "a697e2c5d11021566f55cec48419c85fa9c618321e85fe51527d2754a5e7df36",
+      "sizeBytes": 558414
+    },
+    {
+      "member": "game-td/Assets/Catalog/bundled/sfx/ui/ui_hover.wav",
+      "sha256": "652e91b19c636c6cb9c1887b5cb032fdabba3e44191746864b0d3f0f4991ed3c",
+      "sizeBytes": 336078
+    }
+  ],
+  "version": 1
+}

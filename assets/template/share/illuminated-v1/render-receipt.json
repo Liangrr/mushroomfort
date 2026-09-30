@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "renderer": "catalog-procedural",
+  "pillowVersion": "12.3.0",
+  "title": "Fablewood: Keepers of the Last Seed",
+  "ogImageTitle": "Fablewood: Keepers of the Last Seed",
+  "source": "upload",
+  "accent": "#8cba74",
+  "pixelArt": false,
+  "inputs": {
+    "cover": {
+      "path": "assets/template/share/source/illuminated_gameplay.png",
+      "digest": "sha256:f708aa295052723f59755feec84d2ec9a65154fc8dacbc42142df09dc0b635c5"
+    },
+    "icon": {
+      "path": "assets/template/Interface/illuminated_seed_icon.webp",
+      "digest": "sha256:477c41b00ab710a733179d4425d5bb2bd2b7074d7d186314dd9b33cba426f642"
+    }
+  },
+  "fonts": [
+    {
+      "family": "ManusCC0",
+      "weight": 700,
+      "digest": "sha256:099f6d50114f83533f689ddc37028fcff2bd2a2c4871a332488c1a433f440804"
+    },
+    {
+      "family": "ManusCC0 Sans CJK SC",
+      "license": "CC0-1.0",
+      "role": "glyph-fallback",
+      "digest": "sha256:0a4981b817d7fb556dd8cd80f278483f1849017a312ca965e027d8e0e066968c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "assets/template/share/illuminated-v1/og.png",
+      "digest": "sha256:23e54838a8b6d4ebbf50bd8faf295758511b54ac6bce386ca129af9b6cc4bb38",
+      "width": 1200,
+      "height": 630,
+      "sizeBytes": 1081610
+    },
+    {
+      "path": "assets/template/share/illuminated-v1/favicon.png",
+      "digest": "sha256:525fe34f2ae409784ad5893f6302c5427ecc8abfd96ee7df859c470a55aff8f4",
+      "width": 512,
+      "height": 512,
+      "sizeBytes": 77112
+    },
+    {
+      "path": "assets/template/share/illuminated-v1/favicon-32.png",
+      "digest": "sha256:fb921fead503a557626c4c27c9deb15e1cbe024237d90720e88256587a0446b8",
+      "width": 32,
+      "height": 32,
+      "sizeBytes": 1022
+    }
+  ]
+}

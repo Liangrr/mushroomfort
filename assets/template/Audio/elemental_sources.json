@@ -1,0 +1,15 @@
+{
+  "cues": {
+    "storm_fire": "fire_fire_fixed.mp3",
+    "storm_hit": "fire_hit_fixed.mp3",
+    "frost_fire": "frost_fire.mp3",
+    "frost_hit": "frost_hit.mp3",
+    "earth_fire": "earth_fire.mp3",
+    "earth_hit": "earth_hit.mp3",
+    "fire_fire": "fire_fire.mp3 plus original procedural combustion/crackle layers",
+    "fire_hit": "fire_fire.mp3 texture plus original procedural flame-blast layers"
+  },
+  "processing": "trim, band limiting, normalization and boundary fades; Fire includes procedural combustion/crackle layers",
+  "voice_gain_db": -15,
+  "default_sfx_volume": 0.4875
+}

@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/components/aetheria_screen_shell.gd" id="1_shell"]
+[ext_resource type="Theme" path="res://data/presentation/ui/threshold_theme.tres" id="2_theme"]
+
+[node name="AetheriaScreenShell" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_shell")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0666667, 0.0941176, 0.152941, 1)
+
+[node name="SafeMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="Center" type="CenterContainer" parent="SafeMargin"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ReadingFrame" type="Control" parent="SafeMargin/Center"]
+custom_minimum_size = Vector2(720, 520)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ReadingPlate" type="PanelContainer" parent="SafeMargin/Center/ReadingFrame"]
+custom_minimum_size = Vector2(720, 520)
+offset_right = 720.0
+offset_bottom = 520.0
+theme_type_variation = &"AuiReadingPanel"
+
+[node name="ContentMargin" type="MarginContainer" parent="SafeMargin/Center/ReadingFrame/ReadingPlate"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="ContentHost" type="MarginContainer" parent="SafeMargin/Center/ReadingFrame/ReadingPlate/ContentMargin"]
+layout_mode = 2
+mouse_filter = 2

@@ -1,0 +1,272 @@
+{
+  "archiveSha256": "0c04ab8ee856988b55885a92305d5382459cc855b2a6361c417bb11606f41e9a",
+  "archiveSizeBytes": 104263,
+  "catalogMetadata": [
+    {
+      "archiveSha256": "0c04ab8ee856988b55885a92305d5382459cc855b2a6361c417bb11606f41e9a",
+      "catalogPath": "2d-sprites/cross-category/itch-io-914840/assets.zip",
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "metadataPath": "2d-sprites/cross-category/itch-io-914840/metadata.json",
+      "metadataSha256": "260a49e10b63325a7419aa1a6f1ab08348ce9f4e8f7fba95d182b15b6fa4c8da",
+      "snapshotId": "catalog-20260918-device-control-v2",
+      "source": {
+        "metadataPath": "2d-sprites/cross-category/itch-io-914840/metadata.json",
+        "metadataSha256": "sha256:260a49e10b63325a7419aa1a6f1ab08348ce9f4e8f7fba95d182b15b6fa4c8da",
+        "name": "Pixel Magic Effects",
+        "packId": "itch-io:914840",
+        "url": "https://foozlecc.itch.io/pixel-magic-sprite-effects"
+      }
+    }
+  ],
+  "catalogSources": [
+    {
+      "catalogPath": "2d-sprites/cross-category/itch-io-914840/assets.zip",
+      "snapshotId": "catalog-20260918-device-control-v2"
+    }
+  ],
+  "dependencyCoverage": "glb-gltf-obj-mtl-textureatlas-bmfont-tiled",
+  "limitations": [],
+  "members": [
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/001.png",
+      "sha256": "c6331dd40aaeaa0b1d92fb8c8ca2e1d43a8bd7a54aa26a51e28eb8aa1f5afae9",
+      "sizeBytes": 368
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/002.png",
+      "sha256": "3ab4d1330848cdc62ab4310d0786ab712014e4a8e0fc8d7cf31e0c24d6259ded",
+      "sizeBytes": 486
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/003.png",
+      "sha256": "053aa7caf632535b10eb20fa3b14c46b74dd7673e40954da13ea3f4cc2afd4fc",
+      "sizeBytes": 569
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/004.png",
+      "sha256": "11ba69097036ae9180fab7941b7ee53efd8a39edce1c3587026bc1339887ff0a",
+      "sizeBytes": 600
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/005.png",
+      "sha256": "31c6bed9b98c1c89549cb055d2d94109f260a5db128ea8eee4e273cad2e853fb",
+      "sizeBytes": 610
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/006.png",
+      "sha256": "11c3b2bc4e1aec0b15100ab9177ddf05e364455acd511615e339a284231ca3a2",
+      "sizeBytes": 566
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/007.png",
+      "sha256": "eb02a0d4acf82d501df02356081a32310e2b10353934bcfc0da0b9710a70b6e8",
+      "sizeBytes": 502
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/008.png",
+      "sha256": "471e2efb6673c1aeb2653dec05cd3930deb61320a5c2172bfafd094496af7d5e",
+      "sizeBytes": 364
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Earth_Spike/009.png",
+      "sha256": "e83976ceecb9a788fa23073db92370900a5af350b3b9034f5e617f9db16edb4b",
+      "sizeBytes": 336
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Explosion/001.png",
+      "sha256": "a964991049fb5921df987801be0c1b1d26464f9d33ac1e15d95f3515df20d3b7",
+      "sizeBytes": 356
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Explosion/002.png",
+      "sha256": "de13b4dfb2f4649844d7b07fed8bf28f042fa3c9170725e9a835f80574db9c0c",
+      "sizeBytes": 372
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Explosion/003.png",
+      "sha256": "ea9552922f9f596fd4fc2d90c1c38a657ce3f9ca0ac7ac4a0d1c8f8945d20fd7",
+      "sizeBytes": 547
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Explosion/004.png",
+      "sha256": "2aafa89531defd02898c50652599e278bfad208260c66987068108be7af6c9dc",
+      "sizeBytes": 663
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Explosion/005.png",
+      "sha256": "cfbe305d2aa96f2f66a77e49bacd2ba670d4a7a59fc1d4fe894a14c0772d270c",
+      "sizeBytes": 641
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Explosion/006.png",
+      "sha256": "2ad394b72cf31cfeab9d2601b5aa622e57278471727164caa30acf8ade3f6c1d",
+      "sizeBytes": 540
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Explosion/007.png",
+      "sha256": "bd780c742d4bdf98a876b98f342641b4fe94db93053487eb14d8a9be2a1ec86c",
+      "sizeBytes": 486
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/001.png",
+      "sha256": "b3829f5e39834c7cc3fb9f0f3fee282f37d32bc20fcf60c4ee43e006bb059fdc",
+      "sizeBytes": 569
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/002.png",
+      "sha256": "cce0ce91c1a8b2689b931ba5daf551e4dfcc3865914dbfb0bdf1f49c4ffd37c5",
+      "sizeBytes": 562
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/003.png",
+      "sha256": "c6aad50193d2f0b014f4513a3a711cb9c2d17714a5a8841aceb6466d934e35f4",
+      "sizeBytes": 547
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/004.png",
+      "sha256": "8a8217edf0e1a7c2229a0e1c368fa8ebaad71af996eb616e88a6610f7030dd2a",
+      "sizeBytes": 556
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/005.png",
+      "sha256": "4bfa131785f8a6f6df0967549e38c6252b974e28593eef9bc958a65037ad73aa",
+      "sizeBytes": 549
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/006.png",
+      "sha256": "ae6f2de733426b12efb3c4a2d3b2658ff73c2f405631819eb5df27380928d366",
+      "sizeBytes": 531
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/007.png",
+      "sha256": "d7d98954a545f7fdd47defffeda425dc8cebaec0ad5a713fa0c6a7d001102677",
+      "sizeBytes": 494
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/008.png",
+      "sha256": "3e52cc28679695629fbc8036e61cef33b1f4b73d23fc24559a0b573c00277edd",
+      "sizeBytes": 496
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/009.png",
+      "sha256": "0a9984bf1082040c6864c6d5fb395d7ddf6a021b242e23e25c7f17e5f229fb24",
+      "sizeBytes": 466
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Fire_Ball/010.png",
+      "sha256": "94f4ecd9ad8ff077cc59ee5ac1042276d07c05620408df688f38e7af8066a348",
+      "sizeBytes": 387
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/001.png",
+      "sha256": "6ba41088b595f80286f65295403fb9d6e143310528fd1c8186a552247e381ced",
+      "sizeBytes": 639
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/002.png",
+      "sha256": "71eaf999869b4f4d3009ccef07fdaac192804cb29f88bda7cd7239d3c2c30678",
+      "sizeBytes": 636
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/003.png",
+      "sha256": "42425b31802ac63f53c03ac9ef22684eeb39e813749290a097a26061354bd6f3",
+      "sizeBytes": 631
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/004.png",
+      "sha256": "ad551339c62e1769f388faaf3536c79687ad0ef50037350fc90c7809895bafd3",
+      "sizeBytes": 624
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/005.png",
+      "sha256": "b206d62a84aa1f8d0e132858d6ad8af102bbe02585962c6b3a3dc5760698a931",
+      "sizeBytes": 617
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/006.png",
+      "sha256": "710ea5f3f5d8fea5b9df270b488d44ce27602968f510e27674dbbe27e1704214",
+      "sizeBytes": 293
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/007.png",
+      "sha256": "8954248e19185018ffb5f0a1b70ebfe33725875ac2d7e2f4d92d10491f47598d",
+      "sizeBytes": 338
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/008.png",
+      "sha256": "39a5578cdef91cbbf5095279449debb18b9f350a8929a4b1cfadb1f91d3134b1",
+      "sizeBytes": 369
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/009.png",
+      "sha256": "deb9d7249c9a1c4df2ebbd226349e02640ecf3d96087d5b1ff8eccd301ef154a",
+      "sizeBytes": 499
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Portal/010.png",
+      "sha256": "d246b7a9b1079df811d9ccdaba9340ad6672d538adb720b6217d8c2bbabf5c67",
+      "sizeBytes": 627
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/001.png",
+      "sha256": "3bc15dab07153d8ce41e97e6b86a8f15c046e7b3d6785440d7cd27bc85eab108",
+      "sizeBytes": 404
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/002.png",
+      "sha256": "a3822d6ea3fa70d0e202f9b35ab0f9b27e4de6f14668cc9b0eeb6ac9cbf2cd3d",
+      "sizeBytes": 413
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/003.png",
+      "sha256": "b3454dde80d6d5574a33d0fd4b93f816989b57ef1eb96cfc27dbb0e20863485a",
+      "sizeBytes": 407
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/004.png",
+      "sha256": "930e12fbae2bd7fa7175fcf36370f3d662e501521893f1b7449784b3956012c7",
+      "sizeBytes": 404
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/005.png",
+      "sha256": "3f58262f97f2f2e7640e0b20f54c38ae7c5a7883b9af8984980dbc3d1da86aa0",
+      "sizeBytes": 412
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/006.png",
+      "sha256": "7266f08a6a14b6204f641f266f0686d91121929e0b90d65a3bcb25c0d87f9d4c",
+      "sizeBytes": 430
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/007.png",
+      "sha256": "c8d1d95e2de3f53db38850fbd5d2443beda2aed5f5f2c810b58ff8ef4b6974eb",
+      "sizeBytes": 404
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/008.png",
+      "sha256": "3bf4176cf1de9a997ad9748c82a6311f9a8697b0aabe23fa841c401eb0fb6056",
+      "sizeBytes": 398
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/009.png",
+      "sha256": "9c2bc796ea50469c6f5e9fc5d5f6e70c0d380624ea678c8401f91a1ffacf785a",
+      "sizeBytes": 375
+    },
+    {
+      "member": "Foozle_2DE0001_Pixel_Magic_Effects/Wind/010.png",
+      "sha256": "e9dda734ed100a8453c5067f129a90d7e1931e1753a72e9d6ac504fe506ab68c",
+      "sizeBytes": 315
+    }
+  ],
+  "version": 1
+}

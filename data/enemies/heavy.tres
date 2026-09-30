@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EnemyDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://data/enemy_def.gd" id="1"]
+
+[ext_resource type="Resource" path="res://data/target_policies/enemy_blocker_only.tres" id="3_target_policy"]
+[resource]
+script = ExtResource("1")
+id = &"heavy"
+hp = 160
+atk = 12
+atk_interval_ticks = 45
+speed_tiles_per_s = 0.5
+aerial = false
+block_weight = 1
+leak_damage = 1
+atk_range_cells = 0
+target_policy = ExtResource("3_target_policy")
+sprite_id = &"heavy"

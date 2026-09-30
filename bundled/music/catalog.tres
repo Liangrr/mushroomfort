@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="MusicCatalog" load_steps=3 format=3]
+[ext_resource type="Script" path="res://bundled/music/music_catalog.gd" id="1"]
+[ext_resource type="Resource" path="res://data/presentation/audio/cues/fablewood.tres" id="2"]
+[resource]
+script = ExtResource("1")
+entries = {&"fablewood": ExtResource("2")}

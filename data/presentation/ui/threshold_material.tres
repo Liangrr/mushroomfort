@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="UiMaterialTier" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/presentation/ui_material_tier.gd" id="1_tier"]
+
+[resource]
+script = ExtResource("1_tier")
+schema_version = 1
+tier_id = &"threshold"
+theme_path = "res://data/presentation/ui/threshold_theme.tres"
+type_variations = {
+&"card_panel": &"AuiCardPanel",
+&"class_badge": &"AuiClassBadge",
+&"completed_badge": &"AuiCompletedBadge",
+&"cooldown_badge": &"AuiCooldownBadge",
+&"cost_badge": &"AuiCostBadge",
+&"destructive_button": &"AuiDestructiveButton",
+&"disabled_button": &"AuiDisabledButton",
+&"focus_ring": &"AuiFocusRing",
+&"hud_panel": &"AuiHudPanel",
+&"inspector_panel": &"AuiInspectorPanel",
+&"locked_badge": &"AuiLockedBadge",
+&"modal_panel": &"AuiModalPanel",
+&"primary_button": &"AuiPrimaryButton",
+&"reading_panel": &"AuiReadingPanel",
+&"reward_panel": &"AuiRewardPanel",
+&"secondary_button": &"AuiSecondaryButton"
+}
+panel_opacity = 1.0
+ambient_emission_scale = 0.0

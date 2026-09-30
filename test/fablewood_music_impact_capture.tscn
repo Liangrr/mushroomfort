@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://test/fablewood_music_impact_capture.gd" id="1"]
+[node name="MusicImpactAcceptance" type="Node"]
+script=ExtResource("1")

@@ -1,0 +1,11 @@
+{
+  "id": "game-td",
+  "kind": "game",
+  "game_genre": "tower-defense",
+  "status": "ready",
+  "name": "Fablewood Tower Defense",
+  "description": "Elemental tower defense with three chapters, animated guardians, upgrades, merges, Worldheart, Hard Mode, English/Chinese UI and local standings.",
+  "capabilities": [
+    "static"
+  ]
+}
