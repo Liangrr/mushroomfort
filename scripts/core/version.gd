@@ -7,6 +7,7 @@ var info: Dictionary = {
 	"build": "local",
 	"branch": "main",
 	"built_at": "",
+	"built_at_bj": "",
 	"channel": "web",
 }
 func _ready() -> void:
@@ -27,4 +28,7 @@ func build() -> String:
 func display() -> String:
 	return "%s · %s · %s" % [short(), str(info.get("channel", "web")).to_upper(), commit()]
 func details() -> String:
-	return "%s\nBuild %s · %s" % [display(), build(), str(info.get("built_at", ""))]
+	var built_at := str(info.get("built_at_bj", ""))
+	if built_at.is_empty():
+		built_at = str(info.get("built_at", ""))
+	return "%s\nBuild %s · 北京时间 %s" % [display(), build(), built_at]

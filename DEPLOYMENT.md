@@ -21,7 +21,7 @@
 - `assets/mg/`：蘑菇炮塔、敌人、地图、UI、音频等发布版资源
 - `localization/en.json`、`localization/zh.json`：英文和简体中文
 - `export_presets.cfg`：Godot Web 导出预设
-- `data/version.json`：本地开发版版本元数据；正式 Web 构建时由 GitHub Actions 自动写入提交号、构建号和时间
+- `data/version.json`：本地开发版版本元数据；正式 Web 构建时由 GitHub Actions 自动写入提交号、构建号、UTC 时间和北京时间
 - `web/loading.html`：Web 加载页
 - `tests/`、`tools/`：数据检查、自动战斗和原生运行辅助脚本
 - `THIRD_PARTY_NOTICES.md`：开源/资源声明
