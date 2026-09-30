@@ -2,10 +2,10 @@
   "sourceRepository": "junnyboi/game-td-elemental",
   "sourceCommit": "202f65843452a59de840d9f1633a75247c2b3b7f",
   "sourcePath": ".",
-  "starterId": "game-td-v64",
-  "parentStarterId": "game-td-v63",
-  "parentFileManifest": "gameStarterFiles.game-td-v63.json",
-  "parentFileManifestSha256": "e9e2730c04224a69a10c4c376b8c193d45b5a5bcfa86a799003d0fb34a6eba94",
+  "starterId": "game-td-v62",
+  "parentStarterId": "game-td-v61",
+  "parentFileManifest": "gameStarterFiles.game-td-v61.json",
+  "parentFileManifestSha256": "acb45c19f5ec90c44e33d9efa483ed61c1407b4d80715f32c2bfe7ea07cb37b4",
   "maintenanceRepository": "manus-ai/manus-addon-webdev",
   "engineVersion": "4.7.2",
   "adaptations": [
@@ -34,8 +34,7 @@
     "Group result and battle-launch regressions in one externally executed source/PCK hook to preserve the common twelve-check limit; the frozen v59 intermediate was not published.",
     "Capture the current scene when a deferred battle swap runs, retiring intervening navigation scenes while preserving failed-activation rollback and durable retry; discard explicitly cancelled launches and cover mixed Chapters/Replay and Play/Back input in the existing launch checks.",
     "Finish Chinese Last Seed and guardian-element terminology consistently across onboarding, introduction, victory and threat guidance.",
-    "Start a fresh campaign in the result retry fixture so a pending stage from an earlier managed check cannot bypass its launch-save failure and retry assertions; gameplay and managed per-run save isolation remain unchanged.",
-    "Revise the TD guide and generated README to prioritize theme-matched towers, merged forms and build pads within approved Blueprint visual scope; gameplay and managed media remain unchanged."
+    "Start a fresh campaign in the result retry fixture so a pending stage from an earlier managed check cannot bypass its launch-save failure and retry assertions; gameplay and managed per-run save isolation remain unchanged."
   ],
   "sourceGitBlobs": {
     ".gitignore": "8a47903bc45ee378d08c76b106b03c7a00bda71a",

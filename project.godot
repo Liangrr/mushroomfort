@@ -1,26 +1,19 @@
 ; Engine configuration file.
-; It's best edited using the editor UI and not directly,
-; since the parameters that go here are not all obvious.
-;
-; Format:
-;   [section] ; section goes between []
-;   param=value ; assign values to parameters
+; Gameplay input actions are registered in code (scripts/core/controls.gd).
 
 config_version=5
 
 [application]
 
-config/name="Fablewood: Keepers of the Last Seed"
-; Preserve existing saves when changing the display title.
+config/name="蘑菇要塞 Mushroom Garrison"
+config/description="A hand-painted 2D tower defense: blooming mushroom turrets guard the forest seed vault."
 config/use_custom_user_dir=true
-config/custom_user_dir_name="Godot/app_userdata/Fablewood"
-config/custom_user_dir_name.linux="godot/app_userdata/Fablewood"
-run/main_scene="res://scenes/loading.tscn"
+config/custom_user_dir_name="MushroomGarrison"
+run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://assets/template/share/grove-20260924/favicon.png"
-boot_splash/image="res://assets/template/Interface/illuminated_seed_splash.webp"
+config/icon="res://assets/mg/ui/icon_seed.png"
 boot_splash/show_image=false
-boot_splash/bg_color=Color(0.055, 0.063, 0.098, 1)
+boot_splash/bg_color=Color(0.114, 0.149, 0.086, 1)
 
 [audio]
 
@@ -29,72 +22,33 @@ general/default_playback_type=1
 [autoload]
 
 TestRunGuard="*res://autoloads/test_run_guard.gd"
+Save="*res://scripts/core/save.gd"
+Loc="*res://scripts/core/loc.gd"
+GameData="*res://scripts/core/game_data.gd"
 ManusFontTheme="*res://autoload/manus_font_theme.gd"
-CursorManager="*res://autoloads/cursor_manager.gd"
-I18n="*res://autoloads/i18n.gd"
-Music="*res://autoloads/music.gd"
-TextScale="*res://autoloads/text_scale.gd"
-UiFeedback="*res://autoloads/ui_feedback.gd"
-ContentPacks="*res://autoloads/content_pack_loader.gd"
-Leaderboard="*res://autoloads/leaderboard.gd"
-Game="*res://autoloads/game.gd"
-Sfx="*res://autoloads/sfx.gd"
-TweakControls="*res://scripts/fablewood/tuning.gd"
-TuningBridge="*res://scripts/manus/preview/tuning_adapter.gd"
+Sound="*res://scripts/core/sound.gd"
+Controls="*res://scripts/core/controls.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
 
 [editor]
 
 export/convert_text_resources_to_binary=false
-
 import/use_multiple_threads=false
 
-[gui]
+[input_devices]
 
-
-[input]
-
-ui_accept={
-"deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194310,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
-]
-}
-ui_cancel={
-"deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
-]
-}
-battle_pause={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
-]
-}
-battle_speed_down={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":81,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
-]
-}
-battle_speed_up={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
-]
-}
-
-[leaderboard]
-
-api_base_url=""
-enable_in_headless=false
+pointing/emulate_mouse_from_touch=true
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/canvas_textures/default_texture_filter=1
+2d/snap/snap_2d_transforms_to_pixel=false

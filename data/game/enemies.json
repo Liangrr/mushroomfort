@@ -1,0 +1,12 @@
+{
+  "_doc": "Enemy definitions. hp is the wave-1 value; levels scale it by hp_growth per wave and per-group hp_mult. armor is a damage reduction fraction (0-0.9). speed is pixels per second. size is the on-screen sprite width in pixels.",
+  "enemies": {
+    "munchbug": {"name": "enemy.munchbug.name", "desc": "enemy.munchbug.desc", "sprite": "munchbug", "size": 48, "hp": 60, "speed": 48, "armor": 0.0, "bounty": 6, "lives": 1, "radius": 18, "anim": "walk"},
+    "dashmite": {"name": "enemy.dashmite.name", "desc": "enemy.dashmite.desc", "sprite": "dashmite", "size": 46, "hp": 36, "speed": 98, "armor": 0.0, "bounty": 5, "lives": 1, "radius": 16, "anim": "dash"},
+    "shellback": {"name": "enemy.shellback.name", "desc": "enemy.shellback.desc", "sprite": "shellback", "size": 56, "hp": 150, "speed": 33, "armor": 0.5, "bounty": 12, "lives": 1, "radius": 21, "anim": "heavy"},
+    "duskmoth": {"name": "enemy.duskmoth.name", "desc": "enemy.duskmoth.desc", "sprite": "duskmoth", "size": 56, "hp": 55, "speed": 60, "armor": 0.0, "bounty": 8, "lives": 1, "radius": 20, "anim": "flutter", "flying": true},
+    "gloop": {"name": "enemy.gloop.name", "desc": "enemy.gloop.desc", "sprite": "gloop", "size": 50, "hp": 105, "speed": 40, "armor": 0.0, "bounty": 7, "lives": 1, "radius": 20, "anim": "ooze", "split": {"into": "gloopling", "count": 3}},
+    "gloopling": {"name": "enemy.gloopling.name", "desc": "enemy.gloop.desc", "sprite": "gloop", "size": 28, "hp": 32, "speed": 62, "armor": 0.0, "bounty": 2, "lives": 1, "radius": 12, "anim": "ooze", "hidden_in_codex": true},
+    "thornhorn": {"name": "enemy.thornhorn.name", "desc": "enemy.thornhorn.desc", "sprite": "thornhorn", "size": 112, "hp": 2400, "speed": 24, "armor": 0.35, "bounty": 120, "lives": 5, "radius": 36, "anim": "heavy", "boss": true, "slow_resist": 0.5, "stun_resist": 0.7}
+  }
+}

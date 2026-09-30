@@ -366,12 +366,9 @@ func _effective_gain() -> float:
 					gain *= db_to_linear(effect.ceiling_db - effect.threshold_db)
 				elif effect is AudioEffectAmplify:
 					gain *= db_to_linear(effect.volume_db)
-				elif effect is AudioEffectHardLimiter:
-					# Only pre-gain is constant; ceiling and release require DSP.
-					gain *= db_to_linear(effect.pre_gain_db)
 				elif not _warned_effects.has(effect.get_instance_id()):
 					_warned_effects[effect.get_instance_id()] = true
-					push_warning("Browser BGM does not apply Godot bus effect %s; only volume, Amplify gain, legacy limiter makeup and HardLimiter pre-gain are mirrored, not limiting DSP." % effect.get_class())
+					push_warning("Browser BGM does not apply Godot bus effect %s; only volume, Amplify and limiter makeup are mirrored." % effect.get_class())
 		route_is_solo = route_is_solo or AudioServer.is_bus_solo(index)
 		if index == 0:
 			break

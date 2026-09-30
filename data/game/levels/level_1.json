@@ -1,0 +1,38 @@
+{
+  "_doc": "Grid is 20x11 cells of 64px; rows 0 and 10 are decorative borders under the HUD. Path points are cell coordinates (x may be -1 or 20 to start off-screen). Each wave group: enemy, count, gap (s between spawns), delay (s from wave start), path (index into paths, or air_paths for flying enemies), hp (multiplier on top of hp_growth).",
+  "id": "level_1",
+  "name": "level.1.name",
+  "desc": "level.1.desc",
+  "ground": "ground_1",
+  "theme": "day",
+  "difficulty": 1,
+  "start_gold": 260,
+  "lives": 20,
+  "hp_growth": 0.11,
+  "prep_time": 12,
+  "vault": [18, 6],
+  "paths": [
+    [[-1, 2], [4, 2], [4, 7], [9, 7], [9, 3], [14, 3], [14, 6], [18, 6]]
+  ],
+  "air_paths": [
+    [[-1, 5], [18, 6]]
+  ],
+  "props": [
+    {"type": "tree", "cell": [1, 5]}, {"type": "rock", "cell": [7, 4]}, {"type": "pond", "cell": [11, 8]},
+    {"type": "bush", "cell": [16, 2]}, {"type": "pine", "cell": [12, 1]}, {"type": "log", "cell": [6, 9]},
+    {"type": "flowers", "cell": [2, 8]}, {"type": "fern", "cell": [11, 5]}, {"type": "flowers", "cell": [16, 8]},
+    {"type": "shrooms", "cell": [7, 1]}
+  ],
+  "waves": [
+    {"groups": [{"enemy": "munchbug", "count": 8, "gap": 1.2}]},
+    {"groups": [{"enemy": "munchbug", "count": 12, "gap": 0.9}]},
+    {"groups": [{"enemy": "munchbug", "count": 8, "gap": 1.0}, {"enemy": "dashmite", "count": 6, "gap": 0.7, "delay": 6}]},
+    {"groups": [{"enemy": "shellback", "count": 4, "gap": 2.2}, {"enemy": "munchbug", "count": 10, "gap": 0.8, "delay": 3}]},
+    {"groups": [{"enemy": "duskmoth", "count": 6, "gap": 1.3}, {"enemy": "munchbug", "count": 10, "gap": 0.8, "delay": 2}]},
+    {"groups": [{"enemy": "gloop", "count": 5, "gap": 2.2}, {"enemy": "dashmite", "count": 10, "gap": 0.5, "delay": 6}]},
+    {"groups": [{"enemy": "shellback", "count": 6, "gap": 1.6}, {"enemy": "duskmoth", "count": 8, "gap": 1.0, "delay": 4}, {"enemy": "munchbug", "count": 10, "gap": 0.7, "delay": 8}]},
+    {"groups": [{"enemy": "gloop", "count": 8, "gap": 1.4}, {"enemy": "munchbug", "count": 14, "gap": 0.5, "delay": 3}, {"enemy": "dashmite", "count": 8, "gap": 0.5, "delay": 10}]},
+    {"groups": [{"enemy": "dashmite", "count": 18, "gap": 0.4}, {"enemy": "shellback", "count": 8, "gap": 1.4, "delay": 4}, {"enemy": "duskmoth", "count": 8, "gap": 0.9, "delay": 8}]},
+    {"boss": true, "groups": [{"enemy": "thornhorn", "count": 1, "hp": 0.45, "delay": 4}, {"enemy": "munchbug", "count": 16, "gap": 0.6}, {"enemy": "duskmoth", "count": 6, "gap": 1.0, "delay": 6}, {"enemy": "shellback", "count": 4, "gap": 2.0, "delay": 10}]}
+  ]
+}

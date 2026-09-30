@@ -3,64 +3,8 @@
   "checks": [
     {
       "kind": "script",
-      "path": "res://test/fablewood_checks.gd",
-      "expect": "FABLEWOOD_CHECKS failures=0"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_merge_test.gd",
-      "expect": "MERGE_MODEL_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_ultimate_test.gd",
-      "expect": "ULTIMATE_MODEL_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_worldheart_test.gd",
-      "expect": "WORLDHEART_MODEL_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_late_enemies_test.gd",
-      "expect": "LATE_ENEMY_MODEL_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_late_save_compat.gd",
-      "expect": "LATE_SAVE_COMPAT_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_walk_interpolation_test.gd",
-      "expect": "WALK_INTERPOLATION_TEST_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_particles_test.gd",
-      "expect": "COMBAT_PARTICLES_TEST failures=0"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_endpoint_test.gd",
-      "expect": "ENDPOINT_ANIMATION_TEST_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/illuminated_atlas_contract_test.gd",
-      "expect": "ILLUMINATED_ATLAS_CONTRACT_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_source_contract_suite.gd",
-      "profile": "source",
-      "expect": "FABLEWOOD_SOURCE_CONTRACT_SUITE_PASS"
-    },
-    {
-      "kind": "script",
-      "path": "res://test/fablewood_result_contract.gd",
-      "expect": "FABLEWOOD_RESULT_CONTRACT failures=0"
+      "path": "res://tests/mg_checks.gd",
+      "expect": "MG_CHECKS failures=0"
     }
   ]
 }

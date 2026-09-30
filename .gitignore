@@ -69,3 +69,13 @@ server-data/
 /Assets/**/*.woff2
 /assets/**/*.woff2
 .project-config.json
+
+# Local import/cache and generated delivery archives
+.import/
+.manus-webdev/
+mushroomfort-source.zip
+mushroomfort-web-build.zip
+
+# This repository intentionally includes the game's runtime assets.
+!assets/
+!assets/**

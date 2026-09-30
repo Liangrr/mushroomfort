@@ -1,15 +1,1 @@
-{
-  "schemaVersion": 2,
-  "title": "Fablewood: Keepers of the Last Seed",
-  "description": "Defend the last seed with elemental guardians, combine their powers, and face escalating waves of forest invaders.",
-  "defaultCaptions": {
-    "x": "Defend the last seed in Fablewood: Keepers of the Last Seed.",
-    "facebook": "Build an elemental defense and protect the last seed in Fablewood.",
-    "reddit": "Fablewood: Keepers of the Last Seed — elemental tower defense with guardian merges.",
-    "discord": "Play Fablewood: Keepers of the Last Seed — build, upgrade, and merge elemental guardians."
-  },
-  "assets": {
-    "og": "assets/template/share/grove-20260924/og.png",
-    "favicon": "assets/template/share/grove-20260924/favicon.png"
-  }
-}
+{"schemaVersion":2,"title":"蘑菇要塞 Mushroom Garrison","description":"Plant blooming mushroom turrets along forest trails and defend the seed vault in a hand-painted tower defense. 在林间小路种下会开花的蘑菇炮塔，守护种子仓库。","defaultCaptions":{"x":"Blooming mushroom turrets vs. a swarm of forest pests. Can you 3-star all three maps in Mushroom Garrison?","facebook":"Mushroom Garrison: a cozy hand-painted tower defense. Plant, upgrade and branch four blooming mushroom turrets to protect the seed vault.","reddit":"Mushroom Garrison — a hand-painted 2D tower defense with four branching mushroom turrets, three maps and a mouse, keyboard, gamepad and touch friendly UI.","discord":"Try Mushroom Garrison / 蘑菇要塞 — defend the seed vault with blooming mushroom turrets!"},"assets":{"og":"assets/share/og.png","favicon":"assets/share/favicon.png"}}

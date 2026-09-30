@@ -1,0 +1,62 @@
+{
+  "_doc": "Tower definitions. Each tower has a level graph: '1' -> '2' -> ('a1' | 'b1'), 'a1' -> 'a2', 'b1' -> 'b2'. Every level entry is a complete stat block (no inheritance). attack: pulse | shot | lob. See README 'Data format' for every field.",
+  "order": ["puff", "dew", "thorn", "boom"],
+  "towers": {
+    "puff": {
+      "name": "tower.puff.name",
+      "role": "tower.puff.role",
+      "color": "#e0604a",
+      "hotkey": 1,
+      "levels": {
+        "1": {"cost": 90, "sprite": "puff_1", "attack": "pulse", "air": true, "range": 105, "interval": 1.5, "damage": 16, "next": ["2"]},
+        "2": {"cost": 75, "sprite": "puff_2", "attack": "pulse", "air": true, "range": 115, "interval": 1.4, "damage": 28, "next": ["a1", "b1"]},
+        "a1": {"cost": 160, "sprite": "puff_a", "name": "tower.puff.a.name", "desc": "tower.puff.a.desc", "attack": "pulse", "air": true, "range": 140, "interval": 1.3, "damage": 44, "echo": {"delay": 0.4, "mult": 0.6}, "next": ["a2"]},
+        "a2": {"cost": 230, "sprite": "puff_a", "name": "tower.puff.a.name", "desc": "tower.puff.a2.desc", "attack": "pulse", "air": true, "range": 155, "interval": 1.2, "damage": 70, "echo": {"delay": 0.35, "mult": 0.8}, "next": []},
+        "b1": {"cost": 150, "sprite": "puff_b", "name": "tower.puff.b.name", "desc": "tower.puff.b.desc", "attack": "pulse", "air": true, "range": 120, "interval": 1.3, "damage": 14, "poison": {"dps": 16, "duration": 3.0}, "next": ["b2"]},
+        "b2": {"cost": 220, "sprite": "puff_b", "name": "tower.puff.b.name", "desc": "tower.puff.b2.desc", "attack": "pulse", "air": true, "range": 130, "interval": 1.2, "damage": 22, "poison": {"dps": 30, "duration": 4.0, "spread": 80}, "next": []}
+      }
+    },
+    "dew": {
+      "name": "tower.dew.name",
+      "role": "tower.dew.role",
+      "color": "#6fb0e0",
+      "hotkey": 2,
+      "levels": {
+        "1": {"cost": 70, "sprite": "dew_1", "attack": "shot", "projectile": "dew", "air": true, "range": 130, "interval": 0.9, "damage": 7, "speed": 430, "slow": {"pct": 0.35, "duration": 1.6}, "next": ["2"]},
+        "2": {"cost": 60, "sprite": "dew_2", "attack": "shot", "projectile": "dew", "air": true, "range": 140, "interval": 0.85, "damage": 12, "speed": 450, "slow": {"pct": 0.42, "duration": 2.0}, "next": ["a1", "b1"]},
+        "a1": {"cost": 150, "sprite": "dew_a", "name": "tower.dew.a.name", "desc": "tower.dew.a.desc", "attack": "pulse", "pulse_style": "frost", "air": true, "range": 125, "interval": 1.1, "damage": 9, "slow": {"pct": 0.5, "duration": 1.4}, "freeze_every": 4, "freeze_duration": 0.8, "next": ["a2"]},
+        "a2": {"cost": 210, "sprite": "dew_a", "name": "tower.dew.a.name", "desc": "tower.dew.a2.desc", "attack": "pulse", "pulse_style": "frost", "air": true, "range": 140, "interval": 1.0, "damage": 16, "slow": {"pct": 0.6, "duration": 1.6}, "freeze_every": 3, "freeze_duration": 1.1, "next": []},
+        "b1": {"cost": 140, "sprite": "dew_b", "name": "tower.dew.b.name", "desc": "tower.dew.b.desc", "attack": "shot", "projectile": "amber", "air": true, "range": 145, "interval": 1.2, "damage": 14, "speed": 400, "slow": {"pct": 0.4, "duration": 1.5}, "puddle": {"radius": 46, "duration": 3.5, "slow": 0.45, "vuln": 0.25}, "next": ["b2"]},
+        "b2": {"cost": 200, "sprite": "dew_b", "name": "tower.dew.b.name", "desc": "tower.dew.b2.desc", "attack": "shot", "projectile": "amber", "air": true, "range": 150, "interval": 1.0, "damage": 22, "speed": 420, "slow": {"pct": 0.45, "duration": 1.8}, "puddle": {"radius": 58, "duration": 4.5, "slow": 0.55, "vuln": 0.4}, "next": []}
+      }
+    },
+    "thorn": {
+      "name": "tower.thorn.name",
+      "role": "tower.thorn.role",
+      "color": "#8aa83a",
+      "hotkey": 3,
+      "levels": {
+        "1": {"cost": 100, "sprite": "thorn_1", "attack": "shot", "projectile": "thorn", "air": true, "range": 165, "interval": 1.1, "damage": 24, "speed": 760, "pierce": 3, "next": ["2"]},
+        "2": {"cost": 85, "sprite": "thorn_2", "attack": "shot", "projectile": "thorn", "air": true, "range": 175, "interval": 1.0, "damage": 38, "speed": 800, "pierce": 4, "next": ["a1", "b1"]},
+        "a1": {"cost": 190, "sprite": "thorn_a", "name": "tower.thorn.a.name", "desc": "tower.thorn.a.desc", "attack": "shot", "projectile": "longthorn", "air": true, "range": 270, "interval": 1.7, "damage": 120, "speed": 1300, "pierce": 6, "armor_pierce": 1.0, "target": "strong", "next": ["a2"]},
+        "a2": {"cost": 260, "sprite": "thorn_a", "name": "tower.thorn.a.name", "desc": "tower.thorn.a2.desc", "attack": "shot", "projectile": "longthorn", "air": true, "range": 310, "interval": 1.5, "damage": 200, "speed": 1400, "pierce": 8, "armor_pierce": 1.0, "target": "strong", "next": []},
+        "b1": {"cost": 175, "sprite": "thorn_b", "name": "tower.thorn.b.name", "desc": "tower.thorn.b.desc", "attack": "shot", "projectile": "thorn", "air": true, "range": 170, "interval": 0.5, "damage": 18, "speed": 820, "pierce": 2, "spread_count": 3, "spread_angle": 12, "next": ["b2"]},
+        "b2": {"cost": 245, "sprite": "thorn_b", "name": "tower.thorn.b.name", "desc": "tower.thorn.b2.desc", "attack": "shot", "projectile": "thorn", "air": true, "range": 180, "interval": 0.42, "damage": 24, "speed": 860, "pierce": 3, "spread_count": 5, "spread_angle": 10, "next": []}
+      }
+    },
+    "boom": {
+      "name": "tower.boom.name",
+      "role": "tower.boom.role",
+      "color": "#f08a3a",
+      "hotkey": 4,
+      "levels": {
+        "1": {"cost": 120, "sprite": "boom_1", "attack": "lob", "air": false, "range": 150, "interval": 2.0, "damage": 34, "splash": 58, "flight": 0.75, "next": ["2"]},
+        "2": {"cost": 100, "sprite": "boom_2", "attack": "lob", "air": false, "range": 160, "interval": 1.9, "damage": 55, "splash": 66, "flight": 0.75, "next": ["a1", "b1"]},
+        "a1": {"cost": 200, "sprite": "boom_a", "name": "tower.boom.a.name", "desc": "tower.boom.a.desc", "attack": "lob", "air": false, "range": 165, "interval": 1.9, "damage": 55, "splash": 60, "flight": 0.75, "cluster": {"count": 4, "damage": 26, "radius": 42, "spread": 56}, "next": ["a2"]},
+        "a2": {"cost": 270, "sprite": "boom_a", "name": "tower.boom.a.name", "desc": "tower.boom.a2.desc", "attack": "lob", "air": false, "range": 175, "interval": 1.8, "damage": 80, "splash": 66, "flight": 0.75, "cluster": {"count": 6, "damage": 36, "radius": 46, "spread": 64}, "next": []},
+        "b1": {"cost": 210, "sprite": "boom_b", "name": "tower.boom.b.name", "desc": "tower.boom.b.desc", "attack": "lob", "air": false, "range": 165, "interval": 2.8, "damage": 150, "splash": 92, "flight": 0.9, "stun": 0.5, "next": ["b2"]},
+        "b2": {"cost": 290, "sprite": "boom_b", "name": "tower.boom.b.name", "desc": "tower.boom.b2.desc", "attack": "lob", "air": false, "range": 175, "interval": 2.6, "damage": 260, "splash": 108, "flight": 0.9, "stun": 0.8, "next": []}
+      }
+    }
+  }
+}

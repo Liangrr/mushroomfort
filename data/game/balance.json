@@ -1,0 +1,16 @@
+{
+  "_doc": "Global gameplay parameters shared by all levels.",
+  "level_order": ["level_1", "level_2", "level_3"],
+  "grid": {"cell": 64, "cols": 20, "rows": 11, "origin": [0, 8]},
+  "blocked_rows": [0, 10],
+  "path_clearance": 46,
+  "stars": {"three": 0.9, "two": 0.5},
+  "sell_refund": 0.7,
+  "wave_clear_bonus": 20,
+  "early_call_gold_per_second": 2,
+  "speeds": [1, 2, 3],
+  "combo_window": 1.1,
+  "combo_bonus_every": 8,
+  "combo_bonus_gold": 6,
+  "score": {"per_kill": 10, "per_life": 150, "per_gold": 1, "win_bonus": 2000}
+}
