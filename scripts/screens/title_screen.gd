@@ -1,7 +1,6 @@
 extends Control
 ## Title: animated key art, logo, main menu and language toggle.
 
-const OpenSourceLicenses := preload("res://scripts/manus/open_source_licenses.gd")
 const MobileLayout := preload("res://scripts/ui/mobile_layout.gd")
 
 var _art: TextureRect
@@ -9,6 +8,7 @@ var _logo: TextureRect
 var _menu: VBoxContainer
 var _buttons: Array = []
 var _lang_btn: GameButton
+var _version_label: Label
 var _progress: Label
 var _t := 0.0
 
@@ -80,13 +80,11 @@ func _ready() -> void:
 	UiKit.place(_lang_btn, Vector2(1, 0), Vector2(-176, 22), Vector2(150, 50))
 	add_child(_lang_btn)
 
-	var licenses := UiKit.button("", OpenSourceLicenses.open.bind(self), "PaperButton")
-	licenses.name = "OpenSourceLicensesButton"
-	licenses.add_theme_font_size_override("font_size", 15)
-	UiKit.place(licenses, Vector2(0, 1), Vector2(22, -58), Vector2(0, 40))
-	add_child(licenses)
 	_buttons.append(_lang_btn)
-	_buttons.append(licenses)
+	_version_label = UiKit.label(GameVersion.display(), "SmallLabel", 14)
+	_version_label.modulate.a = 0.82
+	UiKit.place(_version_label, Vector2(0, 1), Vector2(22, -42), Vector2(420, 28))
+	add_child(_version_label)
 	UiKit.chain_focus([play, settings, help])
 
 	Loc.changed.connect(_refresh)
@@ -119,7 +117,6 @@ func _refresh() -> void:
 	_buttons[0].text = Loc.t("menu.play")
 	_buttons[1].text = Loc.t("menu.settings")
 	_buttons[2].text = Loc.t("menu.help")
-	_buttons[4].text = Loc.t("menu.licenses")
 	_lang_btn.text = "EN" if Loc.lang == "zh" else "中文"
 	var stars := 0
 	for level: Dictionary in GameData.levels:

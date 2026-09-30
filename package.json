@@ -3,7 +3,7 @@
   "private": true,
   "packageManager": "pnpm@10.11.0",
   "scripts": {
-    "export": "mkdir -p build/web && \"${GODOT_BIN:-godot}\" --headless --path . --export-release Web build/web/index.html",
+    "export": "mkdir -p build/web && \"${GODOT_BIN:-godot}\" --headless --path . --export-release Web build/web/index.html && cp data/version.json build/web/version.json",
     "dev": "node scripts/manus/runtime-command.cjs ./server.mjs",
     "build": "node scripts/manus/runtime-command.cjs ./build.mjs",
     "preview:build": "node scripts/manus/runtime-command.cjs ./preview-build.mjs",

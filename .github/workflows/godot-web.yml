@@ -40,10 +40,29 @@ jobs:
           unzip -jo /tmp/Godot_v4.7.2-stable_export_templates.tpz \
             'templates/web_nothreads_*' -d "$template_dir"
 
+      - name: Generate version metadata
+        run: |
+          set -eu
+          base_version="$(sed -n 's/.*\"version\": \"\([^\"]*\)\".*/\1/p' data/version.json | head -1)"
+          commit="${GITHUB_SHA:0:7}"
+          build="${GITHUB_RUN_NUMBER}"
+          built_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          cat > data/version.json <<EOF
+          {
+            "version": "${base_version}",
+            "commit": "${commit}",
+            "build": "${build}",
+            "branch": "${GITHUB_REF_NAME}",
+            "built_at": "${built_at}",
+            "channel": "web"
+          }
+          EOF
+
       - name: Export Godot Web build
         run: |
           mkdir -p build/web
           godot --headless --path . --export-release Web build/web/index.html
+          cp data/version.json build/web/version.json
 
       - name: Upload downloadable Web build
         uses: actions/upload-artifact@v4

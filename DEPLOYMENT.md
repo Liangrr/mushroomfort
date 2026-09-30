@@ -21,6 +21,7 @@
 - `assets/mg/`：蘑菇炮塔、敌人、地图、UI、音频等发布版资源
 - `localization/en.json`、`localization/zh.json`：英文和简体中文
 - `export_presets.cfg`：Godot Web 导出预设
+- `data/version.json`：本地开发版版本元数据；正式 Web 构建时由 GitHub Actions 自动写入提交号、构建号和时间
 - `web/loading.html`：Web 加载页
 - `tests/`、`tools/`：数据检查、自动战斗和原生运行辅助脚本
 - `THIRD_PARTY_NOTICES.md`：开源/资源声明
@@ -33,6 +34,16 @@
 ```
 
 `.import/` 是本地参考目录，不会被打进游戏发布包。
+
+### 游戏版本信息
+
+标题页左下角显示当前版本、渠道和短提交号；设置面板会显示完整构建信息。正式 Web 发布后，构建目录根部还会提供：
+
+```text
+https://liangrr.github.io/mushroomfort/version.json
+```
+
+该文件由 GitHub Actions 在每次 `main` 分支构建时自动生成，不需要手动修改。
 
 ## 2. 直接用 Godot 本地运行
 

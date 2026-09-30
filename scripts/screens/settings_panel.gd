@@ -39,6 +39,9 @@ func _ready() -> void:
 	var close := UiKit.button(Loc.t("common.close"), _close, "CoralButton", Vector2(240, 56))
 	close.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	v.add_child(close)
+	var version := UiKit.label(GameVersion.details(), "SmallLabel", 14, HORIZONTAL_ALIGNMENT_CENTER)
+	version.modulate.a = 0.78
+	v.add_child(version)
 	_focusables.append(close)
 	UiKit.chain_focus(_focusables)
 	_lang_en.focus_neighbor_top = _lang_en.get_path_to(_focusables[_focusables.size() - 3])
