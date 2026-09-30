@@ -23,6 +23,17 @@ jobs:
       - name: Validate game data and localization
         run: ./tools/run_godot_test.sh tests/mg_checks.gd
 
+      - name: Install Godot Web export templates
+        run: |
+          set -euo pipefail
+          template_dir="${HOME}/.local/share/godot/export_templates/4.7.2.stable"
+          mkdir -p "$template_dir"
+          curl -fsSL --retry 3 \
+            -o /tmp/Godot_v4.7.2-stable_export_templates.tpz \
+            https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          unzip -jo /tmp/Godot_v4.7.2-stable_export_templates.tpz \
+            'templates/web_release*' -d "$template_dir"
+
       - name: Export Godot Web build
         run: |
           mkdir -p build/web
