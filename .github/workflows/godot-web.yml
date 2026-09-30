@@ -38,7 +38,7 @@ jobs:
             -o /tmp/Godot_v4.7.2-stable_export_templates.tpz \
             https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
           unzip -jo /tmp/Godot_v4.7.2-stable_export_templates.tpz \
-            'templates/web_release*' -d "$template_dir"
+            'templates/web_nothreads_*' -d "$template_dir"
 
       - name: Export Godot Web build
         run: |
