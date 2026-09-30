@@ -16,7 +16,7 @@ Source SHA-256: 38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412
 /* manus-loader-cjk:end */
   </style>
   <style>
-    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #1d2616; color: #fbf1d8; font-family: "Noto Sans SC", sans-serif; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #1d2616; color: #fbf1d8; font-family: "Noto Sans SC", sans-serif; touch-action: none; overscroll-behavior: none; }
     #canvas { display: block; width: 100%; height: 100%; outline: none; }
     /* Original generated art, embedded and compressed: available before the game PCK. */
     #loading { position: fixed; inset: 0; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); background: #1d2616; isolation: isolate; text-align: center; }
@@ -39,6 +39,7 @@ Source SHA-256: 38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412
     @media (max-height: 480px) { #loading { padding: 10px; } .loading-copy { padding: 12px 18px; gap: 7px; } h1 { font-size: 22px; } }
     #game-logo { width: min(420px, 70vw); height: auto; margin-top: -86px; filter: drop-shadow(0 6px 10px rgba(0,0,0,.35)); }
     @media (max-height: 480px) { #game-logo { width: min(260px, 40vw); margin-top: -40px; } }
+    @media (orientation: landscape) and (max-height: 600px) { #loading { padding-left: max(18px, env(safe-area-inset-left)); padding-right: max(18px, env(safe-area-inset-right)); } .loading-copy { width: min(620px, 84vw); } }
   </style>
 </head>
 <body>

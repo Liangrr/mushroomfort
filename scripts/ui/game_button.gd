@@ -2,12 +2,16 @@ class_name GameButton
 extends Button
 ## Button with squash/stretch hover + press feedback and UI sounds.
 
+const MobileLayout := preload("res://scripts/ui/mobile_layout.gd")
+
 @export var click_sound := "click"
 var _tween: Tween
 
 
 func _ready() -> void:
 	focus_mode = Control.FOCUS_ALL
+	if MobileLayout.is_mobile_browser():
+		custom_minimum_size = MobileLayout.touch_target(custom_minimum_size)
 	resized.connect(_center_pivot)
 	_center_pivot()
 	mouse_entered.connect(_on_hover.bind(true))

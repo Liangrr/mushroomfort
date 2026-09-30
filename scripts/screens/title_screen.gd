@@ -2,9 +2,11 @@ extends Control
 ## Title: animated key art, logo, main menu and language toggle.
 
 const OpenSourceLicenses := preload("res://scripts/manus/open_source_licenses.gd")
+const MobileLayout := preload("res://scripts/ui/mobile_layout.gd")
 
 var _art: TextureRect
 var _logo: TextureRect
+var _menu: VBoxContainer
 var _buttons: Array = []
 var _lang_btn: GameButton
 var _progress: Label
@@ -57,6 +59,7 @@ func _ready() -> void:
 	add_child(_logo)
 
 	var menu := UiKit.vbox(14)
+	_menu = menu
 	menu.position = Vector2(150, 330)
 	menu.custom_minimum_size = Vector2(340, 0)
 	add_child(menu)
@@ -87,13 +90,29 @@ func _ready() -> void:
 	UiKit.chain_focus([play, settings, help])
 
 	Loc.changed.connect(_refresh)
+	get_viewport().size_changed.connect(_layout_mobile)
 	_refresh()
+	_layout_mobile()
 	for i in menu.get_child_count():
 		UiKit.pop_in(menu.get_child(i), 0.15 + i * 0.07)
 	Sound.play_music("title", 1.2)
 	Sound.prepare_music.call_deferred("battle")
 	if Controls.uses_focus():
 		play.grab_focus.call_deferred()
+
+
+func _layout_mobile() -> void:
+	if not MobileLayout.is_mobile_browser() or _menu == null:
+		return
+	var s := get_viewport_rect().size
+	var inset := MobileLayout.edge_inset()
+	# Keep the menu in the left safe area and enlarge its touch targets without
+	# changing the authored desktop composition.
+	_menu.position = Vector2(inset + 8.0, maxf(260.0, s.y * 0.43))
+	_menu.custom_minimum_size = Vector2(minf(380.0, s.x * 0.42), 0)
+	_logo.position = Vector2(inset, 14.0)
+	_logo.size = Vector2(minf(560.0, s.x * 0.48), 270.0)
+	UiKit.place(_lang_btn, Vector2(1, 0), Vector2(-inset - 158.0, inset), Vector2(150, 58))
 
 
 func _refresh() -> void:

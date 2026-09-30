@@ -3,6 +3,7 @@ extends CanvasLayer
 ## upgrade panel, banners, combo callouts, pause menu, results and coach tips.
 
 const Coach := preload("res://scripts/battle/coach.gd")
+const MobileLayout := preload("res://scripts/ui/mobile_layout.gd")
 
 var battle: BattleScene
 
@@ -30,10 +31,12 @@ var _modal: Control
 var _coach: Node
 var _shown_gold := 0.0
 var _last_preview_wave := -2
+var _mobile := false
 
 
 func _ready() -> void:
 	layer = 10
+	_mobile = MobileLayout.is_mobile_browser()
 	_root = Control.new()
 	_root.set_anchors_preset(Control.PRESET_FULL_RECT)
 	_root.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -56,6 +59,8 @@ func _ready() -> void:
 	_root.add_child(_combo_lbl)
 	_shown_gold = battle.gold
 	Controls.device_changed.connect(func(_d: String) -> void: _refresh_hint())
+	get_viewport().size_changed.connect(_layout_mobile)
+	_layout_mobile()
 	refresh_stats()
 	if battle.level_index == 0 and not Save.tutorial_done():
 		_coach = Coach.new()
@@ -128,16 +133,16 @@ func _build_wave_controls() -> void:
 	_wave_preview = UiKit.hbox(2, BoxContainer.ALIGNMENT_END)
 	_wave_preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	box.add_child(_wave_preview)
-	_wave_btn = UiKit.button("", battle.call_wave, "CoralButton", Vector2(220, 58))
+	_wave_btn = UiKit.button("", battle.call_wave, "CoralButton", Vector2(220, 72 if _mobile else 58))
 	_wave_btn.focus_mode = Control.FOCUS_NONE
 	_wave_btn.add_theme_font_size_override("font_size", 21)
 	_wave_btn.click_sound = ""
 	box.add_child(_wave_btn)
-	_speed_btn = UiKit.button("x1", battle.cycle_speed, "RoundButton", Vector2(64, 58))
+	_speed_btn = UiKit.button("x1", battle.cycle_speed, "RoundButton", Vector2(72 if _mobile else 64, 72 if _mobile else 58))
 	_speed_btn.focus_mode = Control.FOCUS_NONE
 	_speed_btn.click_sound = ""
 	box.add_child(_speed_btn)
-	_pause_btn = UiKit.button("II", open_pause, "RoundButton", Vector2(64, 58))
+	_pause_btn = UiKit.button("II", open_pause, "RoundButton", Vector2(72 if _mobile else 64, 72 if _mobile else 58))
 	_pause_btn.focus_mode = Control.FOCUS_NONE
 	box.add_child(_pause_btn)
 
@@ -151,22 +156,25 @@ func _build_build_bar() -> void:
 		var tid := str(GameData.tower_order[i])
 		var card := GameButton.new()
 		card.theme_type_variation = "PaperButton"
-		card.custom_minimum_size = Vector2(118, 90)
+		var card_w := 128.0 if _mobile else 118.0
+		var card_h := 104.0 if _mobile else 90.0
+		card.custom_minimum_size = Vector2(card_w, card_h)
 		card.focus_mode = Control.FOCUS_NONE
 		card.click_sound = ""
 		card.pressed.connect(battle.begin_build.bind(tid))
-		var icon := UiKit.icon(GameData.tower_tex(str(GameData.tower_stats(tid, "1").get("sprite", ""))), 58)
-		icon.position = Vector2(30, 2)
-		icon.size = Vector2(58, 58)
+		var icon_size := 66.0 if _mobile else 58.0
+		var icon := UiKit.icon(GameData.tower_tex(str(GameData.tower_stats(tid, "1").get("sprite", ""))), icon_size)
+		icon.position = Vector2((card_w - icon_size) * 0.5, 2)
+		icon.size = Vector2(icon_size, icon_size)
 		card.add_child(icon)
 		var cost := UiKit.label(str(battle.tower_cost(tid)), "HudLabel", 20, HORIZONTAL_ALIGNMENT_CENTER)
-		cost.position = Vector2(26, 58)
+		cost.position = Vector2((card_w - 80.0) * 0.5, 66 if _mobile else 58)
 		cost.size = Vector2(80, 26)
 		cost.add_theme_color_override("font_color", Color("8a560c"))
 		cost.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		card.add_child(cost)
 		var coin := UiKit.icon(GameData.tex("ui/icon_coin.png"), 20)
-		coin.position = Vector2(14, 61)
+		coin.position = Vector2(10 if _mobile else 14, 69 if _mobile else 61)
 		coin.size = Vector2(20, 20)
 		card.add_child(coin)
 		var key := UiKit.label(str(i + 1), "CreamLabel", 15, HORIZONTAL_ALIGNMENT_CENTER)
@@ -188,6 +196,22 @@ func _build_hint() -> void:
 	_hint.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_root.add_child(_hint)
 	_refresh_hint()
+
+
+func _layout_mobile() -> void:
+	if not _mobile:
+		return
+	var s := _root.get_viewport_rect().size
+	var inset := MobileLayout.edge_inset()
+	# The authored 1280x720 layout remains unchanged on desktop. On a small
+	# landscape Web viewport the action controls get a taller, safer bottom row.
+	UiKit.place(_wave_btn.get_parent() as Control, Vector2(1, 0), Vector2(-520.0 - inset, inset), Vector2(500, 78))
+	var build := _build_cards[0].card.get_parent() as Control if not _build_cards.is_empty() else null
+	if build != null:
+		var width := minf(620.0, s.x - inset * 2.0)
+		UiKit.place(build, Vector2(0.5, 1), Vector2(-width * 0.5, -116.0), Vector2(width, 108))
+	if _hint != null:
+		_hint.visible = false
 
 
 func _refresh_hint() -> void:
@@ -486,24 +510,27 @@ func open_ring(c: Vector2i) -> void:
 	center.x = clampf(center.x, 96.0, vs.x - 96.0)
 	center.y = clampf(center.y, 150.0, vs.y - 150.0)
 	_ring.position = center
-	var dirs := [Vector2(0, -86), Vector2(86, 0), Vector2(0, 86), Vector2(-86, 0)]
+	var ring_offset := 100.0 if _mobile else 86.0
+	var ring_size := 96.0 if _mobile else 84.0
+	var dirs := [Vector2(0, -ring_offset), Vector2(ring_offset, 0), Vector2(0, ring_offset), Vector2(-ring_offset, 0)]
 	_ring_buttons.clear()
 	for i in GameData.tower_order.size():
 		var tid := str(GameData.tower_order[i])
 		var st := GameData.tower_stats(tid, "1")
 		var b := GameButton.new()
 		b.theme_type_variation = "RoundButton"
-		b.custom_minimum_size = Vector2(84, 84)
-		b.size = Vector2(84, 84)
-		b.position = dirs[i % 4] - Vector2(42, 42)
+		b.custom_minimum_size = Vector2(ring_size, ring_size)
+		b.size = Vector2(ring_size, ring_size)
+		b.position = dirs[i % 4] - Vector2(ring_size * 0.5, ring_size * 0.5)
 		b.click_sound = ""
 		var ic := UiKit.icon(GameData.tower_tex(str(st.get("sprite", ""))), 52)
-		ic.position = Vector2(16, 4)
-		ic.size = Vector2(52, 52)
+		var icon_size := 60.0 if _mobile else 52.0
+		ic.position = Vector2((ring_size - icon_size) * 0.5, 4)
+		ic.size = Vector2(icon_size, icon_size)
 		b.add_child(ic)
 		var cost := UiKit.label(str(int(st.get("cost", 0))), "HudLabel", 18, HORIZONTAL_ALIGNMENT_CENTER)
-		cost.position = Vector2(0, 54)
-		cost.size = Vector2(84, 24)
+		cost.position = Vector2(0, ring_size - 30.0)
+		cost.size = Vector2(ring_size, 24)
 		cost.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		var ok: bool = battle.gold >= int(st.get("cost", 0))
 		cost.add_theme_color_override("font_color", Color("8a560c") if ok else Palette.CORAL_DARK)
@@ -519,7 +546,7 @@ func open_ring(c: Vector2i) -> void:
 		_ring.add_child(b)
 		_ring_buttons.append(b)
 		b.scale = Vector2(0.3, 0.3)
-		b.pivot_offset = Vector2(42, 42)
+		b.pivot_offset = Vector2(ring_size * 0.5, ring_size * 0.5)
 		var tw := b.create_tween()
 		tw.tween_property(b, "scale", Vector2.ONE, 0.22).set_delay(i * 0.03).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	# Up/right/down/left map straight to the four buttons for gamepads.
