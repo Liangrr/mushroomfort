@@ -8,6 +8,7 @@ var _logo: TextureRect
 var _menu: VBoxContainer
 var _buttons: Array = []
 var _lang_btn: GameButton
+var _fullscreen_btn: GameButton
 var _version_label: Label
 var _progress: Label
 var _t := 0.0
@@ -77,10 +78,14 @@ func _ready() -> void:
 	menu.add_child(_progress)
 
 	_lang_btn = UiKit.button("", _on_lang, "PaperButton", Vector2(150, 50))
+	_fullscreen_btn = UiKit.button("", _on_fullscreen, "PaperButton", Vector2(150, 50))
 	UiKit.place(_lang_btn, Vector2(1, 0), Vector2(-176, 22), Vector2(150, 50))
+	UiKit.place(_fullscreen_btn, Vector2(1, 0), Vector2(-338, 22), Vector2(150, 50))
 	add_child(_lang_btn)
+	add_child(_fullscreen_btn)
 
 	_buttons.append(_lang_btn)
+	_buttons.append(_fullscreen_btn)
 	_version_label = UiKit.label(GameVersion.display(), "SmallLabel", 14)
 	_version_label.modulate.a = 0.82
 	UiKit.place(_version_label, Vector2(0, 1), Vector2(22, -42), Vector2(420, 28))
@@ -111,6 +116,7 @@ func _layout_mobile() -> void:
 	_logo.position = Vector2(inset, 14.0)
 	_logo.size = Vector2(minf(560.0, s.x * 0.48), 270.0)
 	UiKit.place(_lang_btn, Vector2(1, 0), Vector2(-inset - 158.0, inset), Vector2(150, 58))
+	UiKit.place(_fullscreen_btn, Vector2(1, 0), Vector2(-inset - 320.0, inset), Vector2(150, 58))
 
 
 func _refresh() -> void:
@@ -118,6 +124,7 @@ func _refresh() -> void:
 	_buttons[1].text = Loc.t("menu.settings")
 	_buttons[2].text = Loc.t("menu.help")
 	_lang_btn.text = "EN" if Loc.lang == "zh" else "中文"
+	_fullscreen_btn.text = Loc.t("menu.fullscreen")
 	var stars := 0
 	for level: Dictionary in GameData.levels:
 		stars += Save.level_record(str(level.get("id", ""))).stars
@@ -165,3 +172,8 @@ func _restore_focus(i: int) -> void:
 
 func _on_lang() -> void:
 	Loc.toggle()
+
+
+func _on_fullscreen() -> void:
+	if OS.has_feature("web"):
+		JavaScriptBridge.eval("window.mgToggleImmersive && window.mgToggleImmersive();")

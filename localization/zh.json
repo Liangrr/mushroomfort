@@ -4,6 +4,7 @@
   "menu.help": "玩法说明",
   "menu.licenses": "开源许可",
   "menu.stars": "已收集 {n} / {max} 颗星",
+  "menu.fullscreen": "全屏横屏",
 
   "select.title": "选择地图",
   "select.chapter": "第 {n} 章",

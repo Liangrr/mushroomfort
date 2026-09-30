@@ -4,6 +4,7 @@
   "menu.help": "How to Play",
   "menu.licenses": "Licenses",
   "menu.stars": "Stars collected {n} / {max}",
+  "menu.fullscreen": "Fullscreen",
 
   "select.title": "Choose a Map",
   "select.chapter": "Chapter {n}",
