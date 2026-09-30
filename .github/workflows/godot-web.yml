@@ -47,7 +47,7 @@ jobs:
           commit="$(printf '%s' "$GITHUB_SHA" | cut -c1-7)"
           build="${GITHUB_RUN_NUMBER}"
           built_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          built_at_bj="$(TZ=Asia/Shanghai date +%Y-%m-%dT%H:%M:%S+08:00)"
+          built_at_bj="$(date -u -d "+8 hours" +%Y-%m-%dT%H:%M:%S+08:00)"
           cat > data/version.json <<EOF
           {
             "version": "${base_version}",
