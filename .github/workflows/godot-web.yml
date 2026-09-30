@@ -25,7 +25,7 @@ jobs:
 
       - name: Install Godot Web export templates
         run: |
-          set -euo pipefail
+          set -eu
           template_dir="${HOME}/.local/share/godot/export_templates/4.7.2.stable"
           mkdir -p "$template_dir"
           curl -fsSL --retry 3 \
