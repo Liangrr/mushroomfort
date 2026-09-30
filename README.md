@@ -1,5 +1,9 @@
 # 蘑菇要塞 Mushroom Garrison
 
+[![Godot CI and Web Deploy](https://github.com/Liangrr/mushroomfort/actions/workflows/godot-web.yml/badge.svg)](https://github.com/Liangrr/mushroomfort/actions/workflows/godot-web.yml)
+
+GitHub Actions 会在 Pull Request 中执行数据/本地化检查和 Web 构建，并在 `main` 分支推送后自动发布 GitHub Pages。详细配置见 [`docs/github-actions.md`](docs/github-actions.md)。
+
 A hand-painted 2D tower defense built with Godot 4 (Web export). Plant blooming mushroom turrets along forest trails and protect the seed vault from waves of forest pests. This project is also a starting point for adaptations: gameplay numbers, towers, enemies, maps and waves are all data in `data/game/`, and the code is split into small, single-purpose scripts.
 
 This versioned source is managed by the Webdev Addon. Use the installed Game workflow for preview, release and publishing.
@@ -311,5 +315,4 @@ player Settings and gameplay consumers remain. Existing genre rules below identi
 
 ### Export constraints
 Include runtime JSON/CSV/TXT through include_filter or Godot resources. Keep Web thread_support=false, resource paths discoverable, and the template-specific size budget. Use the Session port and the Addon preview/export workflow; do not hardcode the old Sandbox port or overwrite generated site/dist. Change identity through project.godot and the editable game loading shell, not generated HTML.
-
 

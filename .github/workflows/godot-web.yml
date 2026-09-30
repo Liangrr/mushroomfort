@@ -1,0 +1,63 @@
+name: Godot CI and Web Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Check and export Web
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.7.2
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Validate game data and localization
+        run: ./tools/run_godot_test.sh tests/mg_checks.gd
+
+      - name: Export Godot Web build
+        run: |
+          mkdir -p build/web
+          godot --headless --path . --export-release Web build/web/index.html
+
+      - name: Upload downloadable Web build
+        uses: actions/upload-artifact@v4
+        with:
+          name: mushroomfort-web-${{ github.sha }}
+          path: build/web
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload Pages candidate
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  deploy:
+    name: Deploy Web to GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
