@@ -56,6 +56,35 @@ func submit_result(level_id: String, won: bool, stars: int, lives: int, score: i
 	return is_best
 
 
+func cloud_snapshot() -> Dictionary:
+	var records := {}
+	for level: Dictionary in GameData.levels:
+		var level_id := str(level.get("id", ""))
+		if not level_id.is_empty():
+			records[level_id] = level_record(level_id)
+	return {
+		"levels": records,
+		"tutorial_done": tutorial_done(),
+	}
+
+
+func merge_cloud_snapshot(snapshot: Dictionary) -> void:
+	var remote_levels = snapshot.get("levels", {})
+	if typeof(remote_levels) == TYPE_DICTIONARY:
+		for level_id in remote_levels:
+			var remote = remote_levels[level_id]
+			if typeof(remote) != TYPE_DICTIONARY:
+				continue
+			var local := level_record(str(level_id))
+			_cfg.set_value("levels", str(level_id) + ".cleared", bool(local.cleared or remote.get("cleared", false)))
+			_cfg.set_value("levels", str(level_id) + ".stars", maxi(local.stars, int(remote.get("stars", 0))))
+			_cfg.set_value("levels", str(level_id) + ".lives", maxi(local.lives, int(remote.get("lives", 0))))
+			_cfg.set_value("levels", str(level_id) + ".score", maxi(local.score, int(remote.get("score", 0))))
+	if bool(snapshot.get("tutorial_done", false)):
+		_cfg.set_value("flags", "tutorial_done", true)
+	_flush()
+
+
 func is_level_unlocked(index: int) -> bool:
 	if index <= 0:
 		return true

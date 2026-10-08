@@ -29,6 +29,7 @@ GameVersion="*res://scripts/core/version.gd"
 ManusFontTheme="*res://autoload/manus_font_theme.gd"
 Sound="*res://scripts/core/sound.gd"
 Controls="*res://scripts/core/controls.gd"
+CloudService="*res://scripts/core/cloud_service.gd"
 
 [display]
 

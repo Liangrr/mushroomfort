@@ -775,6 +775,9 @@ func _finish(won: bool) -> void:
 	var stars := stars_for(lives) if won else 0
 	var score := score_value(won)
 	var is_best := Save.submit_result(str(level.get("id", "")), won, stars, lives, score)
+	CloudService.save_progress()
+	if won:
+		CloudService.submit_score(str(level.get("id", "")), score, stars, lives)
 	if Engine.has_meta("autoplay"):
 		print("[battle] finished level=%s won=%s lives=%d stars=%d score=%d wave=%d" % [level.id, won, lives, stars, score, wave_index + 1])
 	Sound.stop_music(0.5)

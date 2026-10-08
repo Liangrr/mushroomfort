@@ -69,10 +69,12 @@ func _ready() -> void:
 	play.add_theme_font_size_override("font_size", 32)
 	var settings := UiKit.button("", _on_settings, "", Vector2(340, 58))
 	var help := UiKit.button("", _on_help, "", Vector2(340, 58))
+	var leaderboard := UiKit.button("", _on_leaderboard, "", Vector2(340, 58))
 	menu.add_child(play)
 	menu.add_child(settings)
 	menu.add_child(help)
-	_buttons = [play, settings, help]
+	menu.add_child(leaderboard)
+	_buttons = [play, settings, help, leaderboard]
 	_progress = UiKit.label("", "CreamLabel", 20, HORIZONTAL_ALIGNMENT_CENTER)
 	_progress.custom_minimum_size = Vector2(340, 34)
 	menu.add_child(_progress)
@@ -90,7 +92,7 @@ func _ready() -> void:
 	_version_label.modulate.a = 0.82
 	UiKit.place(_version_label, Vector2(0, 1), Vector2(22, -42), Vector2(420, 28))
 	add_child(_version_label)
-	UiKit.chain_focus([play, settings, help])
+	UiKit.chain_focus([play, settings, help, leaderboard])
 
 	Loc.changed.connect(_refresh)
 	get_viewport().size_changed.connect(_layout_mobile)
@@ -123,6 +125,7 @@ func _refresh() -> void:
 	_buttons[0].text = Loc.t("menu.play")
 	_buttons[1].text = Loc.t("menu.settings")
 	_buttons[2].text = Loc.t("menu.help")
+	_buttons[3].text = "排行榜 / Leaderboard"
 	_lang_btn.text = "EN" if Loc.lang == "zh" else "中文"
 	_fullscreen_btn.text = Loc.t("menu.fullscreen")
 	var stars := 0
@@ -162,6 +165,10 @@ func _on_settings() -> void:
 
 func _on_help() -> void:
 	get_tree().root.get_node("Main").open_help(_restore_focus.bind(2))
+
+
+func _on_leaderboard() -> void:
+	get_tree().root.get_node("Main").open_leaderboard(_restore_focus.bind(3))
 
 
 func _restore_focus(i: int) -> void:

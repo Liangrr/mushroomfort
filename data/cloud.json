@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "provider": "supabase",
+  "rest_url": "https://vvseqfvuxvfqokzsydfa.supabase.co/rest/v1",
+  "publishable_key": "sb_publishable_f0iBuoNQPu6zuT23xC191w__fnXWxZr",
+  "notes": "This is a public publishable key. RLS policies protect the tables; never put a service-role key in the game."
+}

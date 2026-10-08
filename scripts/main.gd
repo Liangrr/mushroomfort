@@ -7,6 +7,7 @@ const MapSelect := preload("res://scripts/screens/map_select.gd")
 const Battle := preload("res://scripts/battle/battle.gd")
 const SettingsPanel := preload("res://scripts/screens/settings_panel.gd")
 const HelpPanel := preload("res://scripts/screens/help_panel.gd")
+const LeaderboardPanel := preload("res://scripts/screens/leaderboard_panel.gd")
 
 var current: Node
 var _fade: ColorRect
@@ -102,6 +103,16 @@ func open_settings(on_close: Callable = Callable()) -> Control:
 
 func open_help(on_close: Callable = Callable()) -> Control:
 	var panel: Control = HelpPanel.new()
+	panel.closed.connect(func() -> void:
+		if on_close.is_valid():
+			on_close.call())
+	_modals.add_child(panel)
+	_fit(panel)
+	return panel
+
+
+func open_leaderboard(on_close: Callable = Callable()) -> Control:
+	var panel: Control = LeaderboardPanel.new()
 	panel.closed.connect(func() -> void:
 		if on_close.is_valid():
 			on_close.call())
