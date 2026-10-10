@@ -1,5 +1,5 @@
 extends Control
-## Map select: three level cards with minimap, difficulty, waves and best record.
+## Map select: level cards with minimap, difficulty, waves and best record.
 
 var _cards: Array = []
 var _back: GameButton
@@ -26,11 +26,17 @@ func _ready() -> void:
 	_back.position = Vector2(24, 26)
 	add_child(_back)
 
+	var scroll := ScrollContainer.new()
+	scroll.set_anchors_preset(Control.PRESET_FULL_RECT)
+	scroll.offset_top = 120
+	scroll.offset_bottom = -40
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
+	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	add_child(scroll)
 	var row := UiKit.hbox(26, BoxContainer.ALIGNMENT_CENTER)
-	row.set_anchors_preset(Control.PRESET_FULL_RECT)
-	row.offset_top = 120
-	row.offset_bottom = -40
-	add_child(row)
+	row.custom_minimum_size = Vector2(0, 0)
+	row.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.add_child(row)
 	for i in GameData.level_count():
 		var card := _make_card(i)
 		row.add_child(card)
@@ -61,7 +67,7 @@ func _make_card(i: int) -> GameButton:
 	var rec := Save.level_record(str(level.get("id", "")))
 	var card := GameButton.new()
 	card.theme_type_variation = "PaperButton"
-	card.custom_minimum_size = Vector2(360, 470)
+	card.custom_minimum_size = Vector2(300, 430)
 	card.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	card.pressed.connect(_on_pick.bind(i))
 	card.click_sound = "click" if unlocked else "invalid"
@@ -76,7 +82,7 @@ func _make_card(i: int) -> GameButton:
 	var mini := LevelMinimap.new()
 	mini.level = level
 	mini.locked = not unlocked
-	mini.custom_minimum_size = Vector2(324, 178)
+	mini.custom_minimum_size = Vector2(264, 150)
 	v.add_child(mini)
 	var chapter := UiKit.label(Loc.t("select.chapter", {"n": i + 1}), "SmallLabel", 16)
 	v.add_child(chapter)
@@ -84,7 +90,7 @@ func _make_card(i: int) -> GameButton:
 	v.add_child(name)
 	var desc := UiKit.label(Loc.t(str(level.get("desc", ""))), "SmallLabel", 16)
 	desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	desc.custom_minimum_size = Vector2(324, 48)
+	desc.custom_minimum_size = Vector2(264, 58)
 	v.add_child(desc)
 	var info := UiKit.hbox(10)
 	info.add_child(UiKit.label(Loc.t("select.waves", {"n": level.get("waves", []).size()}), "", 18))

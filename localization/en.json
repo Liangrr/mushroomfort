@@ -95,6 +95,8 @@
   "level.2.desc": "Two roads merge in the hollow while moths swoop in from both sides.",
   "level.3.name": "Moonlit Grove",
   "level.3.desc": "The vault sits in the heart of the grove, assaulted from east and west.",
+  "level.4.name": "Glowcap Sinkhole",
+  "level.4.desc": "Two winding roads descend into a glowing hollow where the final swarm gathers.",
 
   "build.no_path": "Can't build on the road",
   "build.no_here": "Can't build here",
