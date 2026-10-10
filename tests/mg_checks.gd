@@ -1,7 +1,7 @@
 extends SceneTree
 ## Data contract checks for Mushroom Garrison (no autoloads needed).
 ## Run: tools/run_godot_test.sh tests/mg_checks.gd   -> prints "MG_CHECKS failures=0"
-## Validates towers (2 branches each), enemies, levels (4 maps, 10-15 waves,
+## Validates towers (2 branches each), enemies, levels (10 maps, 10-15 waves,
 ## valid enemy/path references, paths inside the grid) and zh/en string parity.
 
 var failures := 0
@@ -50,7 +50,7 @@ func _initialize() -> void:
 
 	# Levels.
 	var levels: Array = balance.get("level_order", [])
-	_check(levels.size() == 4, "expected 4 levels")
+	_check(levels.size() == 10, "expected 10 levels")
 	for lid in levels:
 		var l: Dictionary = _json("res://data/game/levels/%s.json" % lid)
 		var waves: Array = l.get("waves", [])

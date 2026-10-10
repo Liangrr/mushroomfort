@@ -1,0 +1,432 @@
+{
+  "id": "level_9",
+  "name": "level.9.name",
+  "desc": "level.9.desc",
+  "ground": "ground_2",
+  "theme": "shade",
+  "difficulty": 4,
+  "start_gold": 680,
+  "lives": 16,
+  "hp_growth": 0.13,
+  "prep_time": 12,
+  "vault": [
+    17,
+    6
+  ],
+  "paths": [
+    [
+      [
+        -1,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        12,
+        7
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        17,
+        4
+      ],
+      [
+        17,
+        6
+      ]
+    ],
+    [
+      [
+        -1,
+        9
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        14,
+        6
+      ],
+      [
+        17,
+        6
+      ]
+    ]
+  ],
+  "air_paths": [
+    [
+      [
+        -1,
+        6
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        17,
+        6
+      ]
+    ],
+    [
+      [
+        20,
+        1
+      ],
+      [
+        15,
+        3
+      ],
+      [
+        17,
+        6
+      ]
+    ]
+  ],
+  "props": [
+    {
+      "type": "pine",
+      "cell": [
+        2,
+        5
+      ]
+    },
+    {
+      "type": "pond",
+      "cell": [
+        9,
+        1
+      ]
+    },
+    {
+      "type": "rock",
+      "cell": [
+        4,
+        9
+      ]
+    },
+    {
+      "type": "tree",
+      "cell": [
+        15,
+        8
+      ]
+    },
+    {
+      "type": "shrooms",
+      "cell": [
+        11,
+        9
+      ]
+    },
+    {
+      "type": "log",
+      "cell": [
+        18,
+        2
+      ]
+    },
+    {
+      "type": "fern",
+      "cell": [
+        8,
+        3
+      ]
+    },
+    {
+      "type": "flowers",
+      "cell": [
+        13,
+        1
+      ]
+    },
+    {
+      "type": "bush",
+      "cell": [
+        2,
+        7
+      ]
+    }
+  ],
+  "waves": [
+    {
+      "groups": [
+        {
+          "enemy": "munchbug",
+          "count": 8,
+          "gap": 1.0,
+          "path": 0
+        },
+        {
+          "enemy": "munchbug",
+          "count": 8,
+          "gap": 1.0,
+          "path": 1,
+          "delay": 1
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "dashmite",
+          "count": 10,
+          "gap": 0.55,
+          "path": 0
+        },
+        {
+          "enemy": "dashmite",
+          "count": 10,
+          "gap": 0.55,
+          "path": 1,
+          "delay": 2
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "shellback",
+          "count": 5,
+          "gap": 1.8,
+          "path": 1
+        },
+        {
+          "enemy": "munchbug",
+          "count": 14,
+          "gap": 0.65,
+          "path": 0
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "duskmoth",
+          "count": 8,
+          "gap": 0.85,
+          "path": 0
+        },
+        {
+          "enemy": "duskmoth",
+          "count": 8,
+          "gap": 0.85,
+          "path": 1,
+          "delay": 3
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "gloop",
+          "count": 6,
+          "gap": 1.5,
+          "path": 0
+        },
+        {
+          "enemy": "gloop",
+          "count": 6,
+          "gap": 1.5,
+          "path": 1,
+          "delay": 1
+        },
+        {
+          "enemy": "dashmite",
+          "count": 10,
+          "gap": 0.45,
+          "path": 0,
+          "delay": 5
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "shellback",
+          "count": 8,
+          "gap": 1.1,
+          "path": 0
+        },
+        {
+          "enemy": "shellback",
+          "count": 8,
+          "gap": 1.1,
+          "path": 1,
+          "delay": 2
+        }
+      ]
+    },
+    {
+      "boss": true,
+      "groups": [
+        {
+          "enemy": "thornhorn",
+          "count": 1,
+          "hp": 0.55,
+          "path": 0
+        },
+        {
+          "enemy": "thornhorn",
+          "count": 1,
+          "hp": 0.55,
+          "path": 1,
+          "delay": 5
+        },
+        {
+          "enemy": "munchbug",
+          "count": 18,
+          "gap": 0.45,
+          "path": 0,
+          "delay": 2
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "gloop",
+          "count": 10,
+          "gap": 0.9,
+          "path": 1
+        },
+        {
+          "enemy": "duskmoth",
+          "count": 14,
+          "gap": 0.55,
+          "path": 0,
+          "delay": 2
+        },
+        {
+          "enemy": "dashmite",
+          "count": 18,
+          "gap": 0.3,
+          "path": 1,
+          "delay": 7
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "shellback",
+          "count": 10,
+          "gap": 0.9,
+          "path": 0
+        },
+        {
+          "enemy": "gloop",
+          "count": 10,
+          "gap": 0.85,
+          "path": 1,
+          "delay": 1
+        },
+        {
+          "enemy": "duskmoth",
+          "count": 12,
+          "gap": 0.55,
+          "path": 0,
+          "delay": 6
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "dashmite",
+          "count": 24,
+          "gap": 0.28,
+          "path": 0
+        },
+        {
+          "enemy": "dashmite",
+          "count": 24,
+          "gap": 0.28,
+          "path": 1,
+          "delay": 2
+        },
+        {
+          "enemy": "shellback",
+          "count": 12,
+          "gap": 0.8,
+          "path": 1,
+          "delay": 8
+        }
+      ]
+    },
+    {
+      "groups": [
+        {
+          "enemy": "gloop",
+          "count": 14,
+          "gap": 0.7,
+          "path": 0
+        },
+        {
+          "enemy": "gloop",
+          "count": 14,
+          "gap": 0.7,
+          "path": 1,
+          "delay": 1
+        },
+        {
+          "enemy": "duskmoth",
+          "count": 18,
+          "gap": 0.45,
+          "path": 0,
+          "delay": 5
+        }
+      ]
+    },
+    {
+      "boss": true,
+      "groups": [
+        {
+          "enemy": "thornhorn",
+          "count": 1,
+          "hp": 0.9,
+          "path": 0
+        },
+        {
+          "enemy": "thornhorn",
+          "count": 1,
+          "hp": 0.9,
+          "path": 1,
+          "delay": 6
+        },
+        {
+          "enemy": "shellback",
+          "count": 14,
+          "gap": 0.8,
+          "path": 0,
+          "delay": 2
+        },
+        {
+          "enemy": "dashmite",
+          "count": 24,
+          "gap": 0.3,
+          "path": 1,
+          "delay": 10
+        }
+      ]
+    }
+  ]
+}
